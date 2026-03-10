@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stages - Mode Chapitre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero-panel">
+      <header class="hero-header">
+        <h1>CHAPITRES STAGES</h1>
+      </header>
+
+      <div class="hero-content">
+        <div class="character-zone">
+          <div class="city-noise" aria-hidden="true"></div>
+          <div class="avatar-card" role="img" aria-label="Avatar stylise de developpeuse">
+            <img class="avatar-photo" src="images/group.png" alt="Illustration principale du portfolio">
+            <div class="avatar-glow"></div>
+            <div class="avatar-scanline"></div>
+          </div>
+          <div class="intro-tag">
+            <p>STAGE MODE</p>
+            <h2>CHAPITRES PAR ANNEE</h2>
+            <span>Selectionne une annee pour afficher les experiences correspondantes.</span>
+          </div>
+        </div>
+
+        <aside class="menu-zone" aria-label="Menu des chapitres de stage">
+          <button class="mode-item active" data-target="year2024">
+            <span class="mode-label">01</span>
+            <strong>2024</strong>
+          </button>
+
+          <button class="mode-item" data-target="year2025">
+            <span class="mode-label">02</span>
+            <strong>2025</strong>
+          </button>
+
+          <button class="mode-item" data-target="year2026">
+            <span class="mode-label">03</span>
+            <strong>2026</strong>
+          </button>
+
+          <div class="action-row">
+            <button class="cta-btn" id="backBtn" type="button">BACK</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="info-panel" id="infoPanel" aria-live="polite">
+      <article class="info-card active" id="year2024">
+        <h3>2024</h3>
+        <p>
+          Chapitre 2024: ajoute ici tes missions, les outils utilises et les competences developpees.
+        </p>
+      </article>
+
+      <article class="info-card" id="year2025">
+        <h3>2025</h3>
+        <p>
+          Chapitre 2025: decris tes projets realises, les responsabilites prises et les resultats obtenus.
+        </p>
+      </article>
+
+      <article class="info-card" id="year2026">
+        <h3>2026</h3>
+        <p>
+          Chapitre 2026: presente les objectifs, la progression et les nouvelles competences acquises.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
