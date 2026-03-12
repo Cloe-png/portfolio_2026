@@ -5,6 +5,9 @@ const backToStagesBtn = document.getElementById('backToStagesBtn');
 const settingsBtn = document.getElementById('settingsBtn');
 const avatarCard = document.querySelector('.avatar-card');
 const pressStartBtn = document.getElementById('pressStartBtn');
+const caseCards = document.querySelectorAll('.case-card');
+const detailPanels = document.querySelectorAll('.detail-panel');
+const backToChaptersBtn = document.getElementById('backToChaptersBtn');
 const pageRoutes = {
   presentation: 'chapitres.html#presentation',
   stage: 'chapitres.html#stage',
@@ -75,3 +78,65 @@ if (pressStartBtn) {
     window.location.href = 'chapitres.html';
   });
 }
+
+if (backToChaptersBtn) {
+  backToChaptersBtn.addEventListener('click', () => {
+    window.location.href = 'chapitres.html';
+  });
+}
+
+function openDetailPanel(panel) {
+  const body = panel.querySelector('.detail-body');
+  if (!body) return;
+  body.classList.add('is-open');
+  panel.classList.add('is-open');
+  const origin = panel.dataset.origin;
+  panel.classList.toggle('from-left', origin === 'left');
+  panel.classList.toggle('from-right', origin === 'right');
+}
+
+function closeDetailPanel(panel) {
+  const body = panel.querySelector('.detail-body');
+  if (!body) return;
+  body.classList.remove('is-open');
+  panel.classList.remove('is-open', 'from-left', 'from-right');
+}
+
+function openByHash(hash) {
+  if (!hash) return;
+  const id = hash.replace('#', '');
+  const panel = document.getElementById(id);
+  if (panel) {
+    openDetailPanel(panel);
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+if (caseCards.length) {
+  caseCards.forEach((card) => {
+    card.addEventListener('click', (event) => {
+      const href = card.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+      event.preventDefault();
+      let panel = card.nextElementSibling;
+      while (panel && !panel.classList.contains('detail-panel')) {
+        panel = panel.nextElementSibling;
+      }
+      if (!panel) return;
+      const body = panel.querySelector('.detail-body');
+      if (!body) return;
+      const isOpen = body.classList.contains('is-open');
+      if (isOpen) {
+        closeDetailPanel(panel);
+      } else {
+        openDetailPanel(panel);
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      history.replaceState(null, '', href);
+    });
+  });
+}
+
+window.addEventListener('load', () => {
+  openByHash(window.location.hash);
+});

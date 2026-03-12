@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="presentation-screen investigation-screen">
+      <header class="presentation-header">
+        <h1>DOSSIER PRÉSENTATION</h1>
+        <p>Profil → Parcours scolaire → Compétences</p>
+      </header>
+
+      <div class="investigation-board">
+        <svg class="string-map" viewBox="0 0 1000 600" aria-hidden="true">
+          <path d="M170 140 C 380 160, 420 120, 650 170" />
+          <path d="M680 190 C 520 280, 420 320, 230 360" />
+          <path d="M250 380 C 430 440, 520 470, 760 460" />
+        </svg>
+
+        <a class="case-card case-left" href="#profil">
+          <span class="case-pin"></span>
+          <img src="images/Mizuki.png" alt="Portrait stylisé">
+          <div class="card-content">
+            <span>POINT DE DÉPART</span>
+            <h2>Profil</h2>
+            <p>Qui je suis, ce qui me motive et mon objectif.</p>
+          </div>
+        </a>
+
+        <article id="profil" class="detail-panel case-detail" data-origin="left">
+          <h3>Profil</h3>
+          <div class="detail-body">
+            <p><strong>Cloé Wlodarski-Zminka</strong>, étudiante en BTS SIO au lycée Raymond Poincaré à Bar-le-Duc.</p>
+            <p>Passionnée par la création de sites et d'interfaces, j'aime transformer des idées en expériences visuelles claires et dynamiques.</p>
+          </div>
+        </article>
+
+        <a class="case-card case-right" href="#parcours">
+          <span class="case-pin"></span>
+          <img src="images/Smile Sound wallpaper.jpg" alt="Illustration parcours">
+          <div class="card-content">
+            <span>FIL ROUGE</span>
+            <h2>Parcours scolaire</h2>
+            <p>Études, expériences et étapes clés.</p>
+          </div>
+        </a>
+
+        <article id="parcours" class="detail-panel case-detail is-open from-right" data-origin="right">
+          <h3>Parcours scolaire</h3>
+          <div class="detail-body is-open">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-node"></div>
+                <div class="timeline-card">
+                  <h4>2024</h4>
+                  <p>Ajoute ici ta formation, spécialité et établissement.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-node"></div>
+                <div class="timeline-card">
+                  <h4>2025</h4>
+                  <p>Ajoute ici un projet, une expérience ou une étape clé.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-node"></div>
+                <div class="timeline-card">
+                  <h4>2026</h4>
+                  <p>Ajoute ici la suite de ton parcours.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <a class="case-card case-left case-last" href="#competences">
+          <span class="case-pin"></span>
+          <img src="images/The groupcat.jpg" alt="Illustration compétences">
+          <div class="card-content">
+            <span>CONCLUSION</span>
+            <h2>Compétences</h2>
+            <p>Mes technos et points forts.</p>
+          </div>
+        </a>
+
+        <article id="competences" class="detail-panel case-detail" data-origin="left">
+          <h3>Compétences</h3>
+          <div class="detail-body">
+            <div class="skills-marquee" aria-label="Technologies et compétences">
+              <div class="skills-track">
+                <img src="images/skills/html5.svg" alt="HTML5">
+                <img src="images/skills/css.svg" alt="CSS3">
+                <img src="images/skills/javascript.svg" alt="JavaScript">
+                <img src="images/skills/java.svg" alt="Java">
+                <img src="images/skills/php.svg" alt="PHP">
+                <img src="images/skills/mysql.svg" alt="MySQL">
+                <img src="images/skills/laravel.svg" alt="Laravel">
+                <img src="images/skills/postman.svg" alt="Postman">
+                <img src="images/skills/git.svg" alt="Git">
+                <img src="images/skills/github.svg" alt="GitHub">
+                <img src="images/skills/html5.svg" alt="HTML5">
+                <img src="images/skills/css.svg" alt="CSS3">
+                <img src="images/skills/javascript.svg" alt="JavaScript">
+                <img src="images/skills/java.svg" alt="Java">
+                <img src="images/skills/php.svg" alt="PHP">
+                <img src="images/skills/mysql.svg" alt="MySQL">
+                <img src="images/skills/laravel.svg" alt="Laravel">
+                <img src="images/skills/postman.svg" alt="Postman">
+                <img src="images/skills/git.svg" alt="Git">
+                <img src="images/skills/github.svg" alt="GitHub">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="presentation-back">
+        <button class="cta-btn ghost" id="backToChaptersBtn" type="button">BACK</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
