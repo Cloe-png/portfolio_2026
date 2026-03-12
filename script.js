@@ -4,6 +4,7 @@ const backBtn = document.getElementById('backBtn');
 const backToStagesBtn = document.getElementById('backToStagesBtn');
 const settingsBtn = document.getElementById('settingsBtn');
 const avatarCard = document.querySelector('.avatar-card');
+const pressStartBtn = document.getElementById('pressStartBtn');
 const pageRoutes = {
   presentation: 'chapitres.html#presentation',
   stage: 'chapitres.html#stage',
@@ -66,5 +67,11 @@ if (avatarCard) {
 
   avatarCard.addEventListener('mouseleave', () => {
     avatarCard.style.transform = 'rotateY(0) rotateX(0)';
+  });
+}
+
+if (pressStartBtn) {
+  pressStartBtn.addEventListener('click', () => {
+    window.location.href = 'chapitres.html';
   });
 }

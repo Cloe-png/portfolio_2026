@@ -3,61 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Start Screen</title>
-
+  <title>Portfolio - Mode Select</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <main class="game-shell">
+    <section class="home-screen" aria-label="Écran d'accueil du portfolio">
+      <div class="home-noise" aria-hidden="true"></div>
 
-<main class="game-shell">
+      <header class="home-title">
+        <p class="home-kicker">PORTFOLIO GAME MENU</p>
+        <h1>PORTFOLIO</h1>
+        <span>BTS SIO · Lycée Raymond Poincaré · Bar-le-Duc</span>
+      </header>
 
-<section class="hero-panel">
+      <div class="home-hero">
+        <div class="home-card" role="img" aria-label="Avatar stylisé de développeuse">
+          <img class="avatar-photo" src="images/Mizuki.png" alt="Illustration principale du portfolio">
+          <div class="avatar-glow"></div>
+          <div class="avatar-scanline"></div>
+        </div>
 
-<header class="hero-header">
-<h1>PORTFOLIO</h1>
-</header>
+        <div class="home-cta">
+          <button class="press-start start-btn" id="pressStartBtn" type="button">PRESS START</button>
+          <p class="credit-line">1 PLAYER READY</p>
+        </div>
+      </div>
 
-<div class="hero-content">
+      
+    </section>
+  </main>
 
-<div class="character-zone">
-
-<div class="city-noise"></div>
-
-<div class="avatar-card">
-<img class="avatar-photo" src="images/Mizuki.png" alt="Illustration du portfolio">
-
-<div class="avatar-glow"></div>
-<div class="avatar-scanline"></div>
-
-</div>
-
-<div class="intro-tag">
-<p>DEV PROFILE</p>
-<h2>DÉVELOPPEUSE</h2>
-<span>Actuellement en BTS SIO au Lycée Raymond Poincaré à Bar-le-Duc</span>
-</div>
-
-</div>
-
-<aside class="menu-zone">
-
-<a href="chapitres.html" class="enter-btn">
-ENTER
-</a>
-
-</aside>
-
-</div>
-
-</section>
-
-</main>
-
+  <script src="script.js"></script>
 </body>
 </html>
