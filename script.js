@@ -5,11 +5,11 @@ const backToStagesBtn = document.getElementById('backToStagesBtn');
 const settingsBtn = document.getElementById('settingsBtn');
 const avatarCard = document.querySelector('.avatar-card');
 const pageRoutes = {
-  presentation: 'presentation.html',
-  stage: 'stages.html',
-  veille: 'veille_techno.html',
-  projet: 'projet_perso.html',
-  futur: 'futur.html',
+  presentation: 'chapitres.html#presentation',
+  stage: 'chapitres.html#stage',
+  veille: 'chapitres.html#veille',
+  projet: 'chapitres.html#projet',
+  futur: 'chapitres.html#futur',
   year2024: 'stages_2024.html',
   year2025: 'stages_2025.html',
   year2026: 'stages_2026.html'
