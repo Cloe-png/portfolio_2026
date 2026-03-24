@@ -387,13 +387,14 @@ body.is-entering-chapters .chapter-pagination {
   }
 
   .chapter-stage {
-    min-height: auto;
+    min-height: 860px;
     padding-top: 20px;
     padding-bottom: 70px;
   }
 
   .chapter-slide {
-    position: relative;
+    position: absolute;
+    inset: 0;
     min-height: 860px;
   }
 
