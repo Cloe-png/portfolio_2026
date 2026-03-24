@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Chapters</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chapters.css?v=2">
+</head>
+<body>
+  <main class="chapter-slider" data-active-theme="emerald">
+    <header class="chapter-topbar">
+      <a class="chapter-brand" href="index.html">Clo&eacute; Wlodarski-Zminka</a>
+      <nav class="chapter-nav">
+        <a href="aboutme.html">Presentation</a>
+        <a class="is-active" href="chapters.html">Home</a>
+        <a href="projects.html">Stages</a>
+        <a href="skills.html">Veille</a>
+        <a href="contact.html">Projets</a>
+        <a href="futur.html">Futur</a>
+      </nav>
+    </header>
+
+    <section class="chapter-stage">
+      <button class="chapter-arrow chapter-arrow-left" id="prevChapter" type="button" aria-label="Chapitre precedent">
+        &#8249;
+      </button>
+
+      <a class="chapter-slide is-active theme-emerald chapter-clickable" data-theme="emerald" href="aboutme.html">
+        <div class="chapter-aura"></div>
+        <div class="chapter-ghost chapter-ghost-right">PRESENTATION</div>
+
+        <div class="chapter-copy chapter-copy-left">
+          <p class="chapter-label">01</p>
+          <h1>PRESENTATION</h1>
+          <div class="chapter-subcopy">
+            <strong>Profil</strong>
+            <span>Parcours, competences et presentation generale</span>
+          </div>
+        </div>
+
+        <div class="chapter-visual">
+          <div class="chapter-circle"></div>
+          <div class="chapter-character chapter-character-image">
+            <img src="Sasha.png" alt="Sasha">
+          </div>
+        </div>
+
+        <div class="chapter-copy chapter-copy-right chapter-japanese">
+          <span>PROFILE</span>
+          <span>STUDIES</span>
+          <span>SKILLS</span>
+        </div>
+      </a>
+
+      <a class="chapter-slide theme-orange chapter-clickable" data-theme="orange" href="projects.html">
+        <div class="chapter-aura"></div>
+        <div class="chapter-ghost chapter-ghost-right">STAGES</div>
+
+        <div class="chapter-copy chapter-copy-left">
+          <p class="chapter-label">02</p>
+          <h1>STAGES</h1>
+          <div class="chapter-subcopy">
+            <strong>Internships</strong>
+            <span>Agrobio, Colinon Alexis SARL et bilan 2026</span>
+          </div>
+        </div>
+
+        <div class="chapter-visual">
+          <div class="chapter-circle"></div>
+          <div class="chapter-character chapter-character-image">
+            <img src="Owen.png" alt="Owen">
+          </div>
+        </div>
+
+        <div class="chapter-copy chapter-copy-right chapter-japanese">
+          <span>2024</span>
+          <span>2025</span>
+          <span>2026</span>
+        </div>
+      </a>
+
+      <a class="chapter-slide theme-cyan chapter-clickable" data-theme="cyan" href="skills.html">
+        <div class="chapter-aura"></div>
+        <div class="chapter-ghost chapter-ghost-right">VEILLE</div>
+
+        <div class="chapter-copy chapter-copy-left">
+          <p class="chapter-label">03</p>
+          <h1>VEILLE</h1>
+          <div class="chapter-subcopy">
+            <strong>Watch</strong>
+            <span>Veille technologique, sources et sujets suivis</span>
+          </div>
+        </div>
+
+        <div class="chapter-visual">
+          <div class="chapter-circle"></div>
+          <div class="chapter-character">
+            <span>V</span>
+          </div>
+        </div>
+
+        <div class="chapter-copy chapter-copy-right chapter-japanese">
+          <span>TECH</span>
+          <span>NEWS</span>
+          <span>TOOLS</span>
+        </div>
+      </a>
+
+      <a class="chapter-slide theme-violet chapter-clickable" data-theme="violet" href="contact.html">
+        <div class="chapter-aura"></div>
+        <div class="chapter-ghost chapter-ghost-right">PROJETS</div>
+
+        <div class="chapter-copy chapter-copy-left">
+          <p class="chapter-label">04</p>
+          <h1>PROJETS</h1>
+          <div class="chapter-subcopy">
+            <strong>Works</strong>
+            <span>Projets personnels, idees et realisations web</span>
+          </div>
+        </div>
+
+        <div class="chapter-visual">
+          <div class="chapter-circle"></div>
+          <div class="chapter-character">
+            <span>P</span>
+          </div>
+        </div>
+
+        <div class="chapter-copy chapter-copy-right chapter-japanese">
+          <span>WEB</span>
+          <span>CODE</span>
+          <span>UI</span>
+        </div>
+      </a>
+
+      <a class="chapter-slide theme-emerald chapter-clickable" data-theme="emerald" href="futur.html">
+        <div class="chapter-aura"></div>
+        <div class="chapter-ghost chapter-ghost-right">FUTUR</div>
+
+        <div class="chapter-copy chapter-copy-left">
+          <p class="chapter-label">05</p>
+          <h1>FUTUR</h1>
+          <div class="chapter-subcopy">
+            <strong>Outlook</strong>
+            <span>Suite du parcours, objectifs et perspectives</span>
+          </div>
+        </div>
+
+        <div class="chapter-visual">
+          <div class="chapter-circle"></div>
+          <div class="chapter-character">
+            <span>F</span>
+          </div>
+        </div>
+
+        <div class="chapter-copy chapter-copy-right chapter-japanese">
+          <span>GOALS</span>
+          <span>NEXT</span>
+          <span>STEP</span>
+        </div>
+      </a>
+
+      <button class="chapter-arrow chapter-arrow-right" id="nextChapter" type="button" aria-label="Chapitre suivant">
+        &#8250;
+      </button>
+    </section>
+
+    <div class="chapter-pagination" id="chapterPagination">
+      <button class="is-active" type="button" aria-label="Aller au chapitre 1"></button>
+      <button type="button" aria-label="Aller au chapitre 2"></button>
+      <button type="button" aria-label="Aller au chapitre 3"></button>
+      <button type="button" aria-label="Aller au chapitre 4"></button>
+      <button type="button" aria-label="Aller au chapitre 5"></button>
+    </div>
+  </main>
+
+  <script src="chapters.js"></script>
+</body>
+</html>

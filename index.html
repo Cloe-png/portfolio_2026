@@ -1,39 +1,79 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Mode Select</title>
+  <title>Portfolio | Enter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
-  <main class="game-shell">
-    <section class="home-screen" aria-label="Écran d'accueil du portfolio">
-      <div class="home-noise" aria-hidden="true"></div>
+  <div class="boot-sequence" aria-hidden="true">
+    <div class="boot-sequence__noise"></div>
+    <div class="boot-sequence__flash"></div>
+    <div class="boot-sequence__core">
+      <p class="boot-sequence__label">System Boot</p>
+      <h2 class="boot-sequence__title">Loading Portfolio</h2>
+      <div class="boot-sequence__bar">
+        <span class="boot-sequence__fill"></span>
+      </div>
+      <p class="boot-sequence__status">Initializing portfolio...</p>
+    </div>
+  </div>
 
-      <header class="home-title">
-        <p class="home-kicker">PORTFOLIO GAME MENU</p>
-        <h1>PORTFOLIO</h1>
-        <span>BTS SIO · Lycée Raymond Poincaré · Bar-le-Duc</span>
-      </header>
+  <main class="entry-slider" data-entry-theme="cyan">
+    <header class="chapter-topbar">
+      <span class="chapter-brand chapter-brand-static">Cloé Wlodarski-Zminka</span>
+      <nav class="chapter-nav chapter-nav-static" aria-label="Navigation decorative">
+        <span class="is-active">Home</span>
+        <span>Presentation</span>
+        <span>Stages</span>
+        <span>Projets</span>
+        <span class="chapter-dots-btn chapter-dots-static" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </nav>
+    </header>
 
-      <div class="home-hero">
-        <div class="home-card" role="img" aria-label="Avatar stylisé de développeuse">
-          <img class="avatar-photo" src="images/Mizuki.png" alt="Illustration principale du portfolio">
-          <div class="avatar-glow"></div>
-          <div class="avatar-scanline"></div>
-        </div>
+    <section class="entry-stage">
+      <div class="entry-aura"></div>
+      <div class="entry-ghost">ENTER</div>
 
-        <div class="home-cta">
-          <button class="press-start start-btn" id="pressStartBtn" type="button">PRESS START</button>
-          <p class="credit-line">1 PLAYER READY</p>
+      <div class="entry-copy entry-copy-left">
+        <p class="entry-label">00</p>
+        <h1>WELCOME</h1>
+        <div class="entry-subcopy">
+          <strong>Portfolio</strong>
         </div>
       </div>
 
-      
+      <div class="entry-visual">
+        <div class="entry-circle"></div>
+        <div class="entry-character">
+          <span>E</span>
+        </div>
+
+        <a class="entry-button" href="chapters.html" id="enterButton">
+          <span>Enter</span>
+        </a>
+      </div>
+
+      <div class="entry-copy entry-copy-right entry-japanese">
+        <span>START</span>
+        <span>PORTFOLIO</span>
+        <span>ENTRY</span>
+      </div>
     </section>
   </main>
 
