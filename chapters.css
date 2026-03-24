@@ -429,6 +429,10 @@ body.is-entering-chapters .chapter-pagination {
 }
 
 @media (max-width: 575.98px) {
+  .chapter-slider {
+    touch-action: pan-y;
+  }
+
   .chapter-topbar {
     align-items: flex-start;
     flex-direction: column;
@@ -458,9 +462,7 @@ body.is-entering-chapters .chapter-pagination {
   }
 
   .chapter-arrow {
-    width: 48px;
-    height: 48px;
-    font-size: 1.8rem;
+    display: none;
   }
 }
 

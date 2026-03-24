@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let activeIndex = 0;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchDeltaX = 0;
+  let touchDeltaY = 0;
 
   const setActiveSlide = (index) => {
     activeIndex = (index + slides.length) % slides.length;
@@ -55,6 +59,36 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowRight") {
       setActiveSlide(activeIndex + 1);
     }
+  });
+
+  slider.addEventListener("touchstart", (event) => {
+    const touch = event.changedTouches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+    touchDeltaX = 0;
+    touchDeltaY = 0;
+  }, { passive: true });
+
+  slider.addEventListener("touchmove", (event) => {
+    const touch = event.changedTouches[0];
+    touchDeltaX = touch.clientX - touchStartX;
+    touchDeltaY = touch.clientY - touchStartY;
+  }, { passive: true });
+
+  slider.addEventListener("touchend", () => {
+    const minSwipeDistance = 50;
+    const isHorizontalSwipe = Math.abs(touchDeltaX) > Math.abs(touchDeltaY);
+
+    if (!isHorizontalSwipe || Math.abs(touchDeltaX) < minSwipeDistance) {
+      return;
+    }
+
+    if (touchDeltaX < 0) {
+      setActiveSlide(activeIndex + 1);
+      return;
+    }
+
+    setActiveSlide(activeIndex - 1);
   });
 
   setActiveSlide(0);
