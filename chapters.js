@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  setupMobileNav();
   const slider = document.querySelector(".chapter-slider");
   const slides = Array.from(document.querySelectorAll(".chapter-slide"));
   const dots = Array.from(document.querySelectorAll(".chapter-pagination button"));
@@ -106,4 +107,40 @@ function getEntryTransitionState() {
   }
 
   return false;
+}
+
+function setupMobileNav() {
+  const topbar = document.querySelector(".chapter-topbar");
+  const toggle = document.querySelector(".mobile-nav-toggle");
+  const nav = document.querySelector(".chapter-nav");
+
+  if (!topbar || !toggle || !nav) {
+    return;
+  }
+
+  const closeNav = () => {
+    topbar.classList.remove("is-nav-open");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = topbar.classList.toggle("is-nav-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNav);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!topbar.contains(event.target)) {
+      closeNav();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 575.98) {
+      closeNav();
+    }
+  });
 }

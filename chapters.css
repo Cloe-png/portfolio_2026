@@ -96,6 +96,40 @@ body.is-entering-chapters .chapter-pagination {
   gap: 22px;
 }
 
+.mobile-nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-nav-toggle span {
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--theme-main);
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.chapter-topbar.is-nav-open .mobile-nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.chapter-topbar.is-nav-open .mobile-nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.chapter-topbar.is-nav-open .mobile-nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .chapter-nav a {
   color: var(--muted);
   text-decoration: none;
@@ -436,14 +470,45 @@ body.is-entering-chapters .chapter-pagination {
 
   .chapter-topbar {
     align-items: flex-start;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
   }
 
   .chapter-nav {
     width: 100%;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 10px;
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transition:
+      max-height 260ms ease,
+      opacity 220ms ease,
+      transform 220ms ease,
+      padding 220ms ease;
+  }
+
+  .chapter-topbar.is-nav-open .chapter-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-height: 360px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .chapter-nav a {
+    padding: 8px 0;
   }
 
   .chapter-slide {

@@ -7,16 +7,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css?v=2">
+  <link rel="stylesheet" href="pages.css?v=3">
 </head>
 <body>
   <div class="page-bg page-bg-orange" aria-hidden="true"></div>
   <main class="content-shell">
     <header class="content-topbar reveal">
       <a class="content-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
-      <nav class="content-nav">
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="projects-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="content-nav" id="projects-nav">
         <a href="chapters.html">Home</a>
-        <a href="aboutme.html">Présentation</a>
+        <a href="aboutme.html">Pr&eacute;sentation</a>
         <a class="is-active" href="projects.html">Stages</a>
         <a href="skills.html">Veille techno</a>
         <a href="contact.html">projets perso</a>
@@ -26,56 +37,130 @@
 
     <section class="content-hero reveal">
       <p class="content-kicker">02 / Stages</p>
-      <h1>Les experiences de stage du BTS, avec les missions et competences travaillees.</h1>
+      <h1>Trois ann&eacute;es de stage, des missions concr&egrave;tes et les rapports disponibles directement depuis la page.</h1>
       <p class="content-lead">
-        Cette page reprend la section stages de l'ancien portfolio, en conservant les trois annees
-        principales ainsi que les liens vers les rapports existants.
+        Cette page reprend les contenus du portfolio d'origine et les r&eacute;organise dans une pr&eacute;sentation plus proche
+        d'un syst&egrave;me de chapitres&nbsp;: chaque bloc correspond &agrave; une ann&eacute;e avec son contexte, ses missions et son acc&egrave;s rapide au rapport.
       </p>
     </section>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Annee 2024</p>
-        <h2>Agrobio</h2>
-        <p>Laboratoire d'analyses industrielles a Bar-le-Duc. Stage axe sur la programmation, avec exercices PHP, blog, inventaire oriente objet et reprise des bases en Java.</p>
-        <ul class="content-list">
-          <li>Periode : 27 mai 2024 au 5 juillet 2024</li>
-          <li>Technologies : PHP, Java, phpMyAdmin, WampServer</li>
-          <li>Rapport : <a href="Rapport1.pdf" target="_blank" rel="noopener noreferrer">ouvrir le PDF</a></li>
-        </ul>
+    <section class="stage-chapters">
+      <article class="stage-panel reveal">
+        <div class="stage-panel__header">
+          <div>
+            <p class="card-index">Chapitre 01</p>
+            <h2>Stage 2024 - Agrobio</h2>
+          </div>
+          <a class="stage-panel__button" href="Rapport1.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+        </div>
+
+        <div class="stage-panel__meta">
+          <span>P&eacute;riode : 27 mai 2024 - 5 juillet 2024</span>
+          <span>Entreprise : Agro Bio, Bar-le-Duc</span>
+          <span>Technos : PHP, Java, phpMyAdmin, WampServer</span>
+        </div>
+
+        <div class="stage-panel__grid">
+          <section class="content-card content-card-compact">
+            <p class="card-index">Contexte</p>
+            <p>AGROBIO est un laboratoire d'analyses agricoles situ&eacute; &agrave; Bar-le-Duc. L'entreprise analyse des &eacute;chantillons pour v&eacute;rifier le respect des normes sanitaires et joue un r&ocirc;le important dans la s&eacute;curit&eacute; alimentaire.</p>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Travaux r&eacute;alis&eacute;s</p>
+            <ul class="content-list">
+              <li>Exercices PHP et cr&eacute;ation d'un blog avec ajout, modification et suppression</li>
+              <li>Syst&egrave;me d'inventaire orient&eacute; objet avec gestion des stocks</li>
+              <li>R&eacute;solution d'un blocage WampServer / phpMyAdmin</li>
+              <li>Projet Java de biblioth&egrave;que virtuelle avec export Excel</li>
+            </ul>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Comp&eacute;tences acquises</p>
+            <ul class="content-list">
+              <li>Consolidation des bases en PHP</li>
+              <li>Travail plus autonome avec VS Code, phpMyAdmin et WampServer</li>
+              <li>Approfondissement du Java</li>
+              <li>R&eacute;solution autonome de probl&egrave;mes techniques</li>
+            </ul>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Bilan</p>
+            <p>Ce stage m'a permis de mesurer mes progr&egrave;s techniques et de mieux comprendre l'importance de l'informatique dans l'agroalimentaire, tout en clarifiant mon projet professionnel dans le d&eacute;veloppement.</p>
+          </section>
+        </div>
       </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Annee 2025</p>
-        <h2>SARL Colinon Alexis</h2>
-        <p>Creation d'un site web a partir d'une reference, reservation du nom de domaine et mise en ligne complete du site chez OVHCloud.</p>
-        <ul class="content-list">
-          <li>Periode : 6 janvier 2025 au 15 fevrier 2025</li>
-          <li>Technologies : HTML, CSS, JavaScript, OVHCloud</li>
-          <li>Rapport : <a href="Rapport2.pdf" target="_blank" rel="noopener noreferrer">ouvrir le PDF</a></li>
-        </ul>
+      <article class="stage-panel reveal">
+        <div class="stage-panel__header">
+          <div>
+            <p class="card-index">Chapitre 02</p>
+            <h2>Stage 2025 - SARL Colinon Alexis</h2>
+          </div>
+          <a class="stage-panel__button" href="Rapport2.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+        </div>
+
+        <div class="stage-panel__meta">
+          <span>P&eacute;riode : 6 janvier 2025 - 15 f&eacute;vrier 2025</span>
+          <span>Entreprise : Colinon Alexis SARL, Villers-le-Sec</span>
+          <span>Technos : HTML, CSS, JavaScript, OVHCloud</span>
+        </div>
+
+        <div class="stage-panel__grid">
+          <section class="content-card content-card-compact">
+            <p class="card-index">Contexte</p>
+            <p>L'entreprise Colinon Alexis SARL est sp&eacute;cialis&eacute;e dans les travaux de pl&acirc;trerie et d'am&eacute;nagement int&eacute;rieur. Ce stage m'a permis de travailler sur une mission web compl&egrave;te dans un cadre professionnel.</p>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Travaux r&eacute;alis&eacute;s</p>
+            <ul class="content-list">
+              <li>Cr&eacute;ation d'un site web &agrave; partir d'une r&eacute;f&eacute;rence</li>
+              <li>R&eacute;servation du nom de domaine</li>
+              <li>Mise en ligne du site chez OVHCloud</li>
+            </ul>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Comp&eacute;tences acquises</p>
+            <ul class="content-list">
+              <li>D&eacute;veloppement web front-end</li>
+              <li>Gestion d'h&eacute;bergement et de mise en ligne</li>
+              <li>Respect d'une charte graphique</li>
+              <li>Autonomie sur une mission compl&egrave;te</li>
+            </ul>
+          </section>
+
+          <section class="content-card content-card-compact">
+            <p class="card-index">Bilan</p>
+            <p>L'&eacute;coute et l'accompagnement re&ccedil;us pendant ce stage m'ont permis d'affiner mon projet professionnel et de gagner en autonomie sur un vrai projet de site vitrine.</p>
+          </section>
+        </div>
       </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Annee 2026</p>
-        <h2>EURL Szlazak</h2>
-        <p>Section de bilan pour le stage 2026. L'ancien portfolio contenait encore un emplacement a completer, je l'ai conserve comme base de mise a jour.</p>
-        <ul class="content-list">
-          <li>Etat : contenu detaille a finaliser</li>
-          <li>Objectif : synthese des acquis et missions menees</li>
-          <li>Lien prevu : rapport de stage 2026</li>
-        </ul>
-      </article>
+      <article class="stage-panel reveal">
+        <div class="stage-panel__header">
+          <div>
+            <p class="card-index">Chapitre 03</p>
+            <h2>Stage 2026 - EURL Szlazak</h2>
+          </div>
+          <span class="stage-panel__button stage-panel__button-muted">Rapport &agrave; ajouter</span>
+        </div>
 
-      <article class="content-card reveal">
-        <p class="card-index">Competences gagnees</p>
-        <h2>Ce que ces stages ont apporte</h2>
-        <ul class="content-list">
-          <li>Developpement web front-end et back-end</li>
-          <li>Autonomie sur un environnement local et un hebergement</li>
-          <li>Resolution de problemes techniques en conditions reelles</li>
-          <li>Adaptation a des besoins d'entreprise varies</li>
-        </ul>
+        <div class="stage-panel__meta">
+          <span>Ann&eacute;e : 2026</span>
+          <span>Entreprise : EURL Szlazak</span>
+          <span>&Eacute;tat : contenu en cours de compl&eacute;tion</span>
+        </div>
+
+        <div class="stage-panel__grid stage-panel__grid-single">
+          <section class="content-card content-card-compact">
+            <p class="card-index">Bilan 2026</p>
+            <p>Le portfolio d'origine ne contenait pas encore le d&eacute;tail complet de cette ann&eacute;e. Cette section reste pr&ecirc;te &agrave; accueillir les missions men&eacute;es, les acquis techniques et le rapport final d&egrave;s qu'il sera disponible.</p>
+          </section>
+        </div>
       </article>
     </section>
   </main>

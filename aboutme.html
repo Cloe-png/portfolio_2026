@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Presentation</title>
+  <title>Portfolio | Pr&eacute;sentation</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="aboutme.css?v=5">
+  <link rel="stylesheet" href="aboutme.css?v=6">
 </head>
 <body>
   <main class="poster-page">
@@ -24,9 +24,20 @@
 
       <header class="chapter-topbar poster-topbar">
         <a class="chapter-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
-        <nav class="chapter-nav" aria-label="Navigation secondaire">
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="aboutme-nav"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="chapter-nav" id="aboutme-nav" aria-label="Navigation secondaire">
           <a href="chapters.html">Home</a>
-          <a class="is-active" href="aboutme.html">Présentation</a>
+          <a class="is-active" href="aboutme.html">Pr&eacute;sentation</a>
           <a href="projects.html">Stages</a>
           <a href="skills.html">Veille techno</a>
           <a href="contact.html">projets perso</a>
@@ -44,7 +55,7 @@
     </section>
 
     <section class="about-card reveal">
-      <p class="about-card__eyebrow">Presentation</p>
+      <p class="about-card__eyebrow">Pr&eacute;sentation</p>
 
       <div class="about-card__intro">
         <div class="about-card__copy">
@@ -56,45 +67,79 @@
             <div class="about-card__arrow" aria-hidden="true"></div>
           </div>
 
-          <p class="about-card__alias">Etudiante en BTS SIO - option SLAM</p>
+          <p class="about-card__alias">&Eacute;tudiante en BTS SIO - option SLAM</p>
 
           <p class="about-card__text">
-            Je m'appelle <strong>Clo&eacute; Wlodarski-Zminka</strong> et je suis etudiante en BTS SIO
-            au lycee Raymond Poincare a Bar-le-Duc. Passionnee par la creation de sites et
-            d'interfaces, j'aime transformer des idees en experiences visuelles claires,
-            dynamiques et bien structurees.
+            Je m'appelle <strong>Clo&eacute; Wlodarski-Zminka</strong> et je suis &eacute;tudiante en BTS SIO
+            au lyc&eacute;e Raymond Poincar&eacute; &agrave; Bar-le-Duc. Passionn&eacute;e par la cr&eacute;ation de sites et
+            d'interfaces, j'aime transformer des id&eacute;es en exp&eacute;riences visuelles claires,
+            dynamiques et bien structur&eacute;es.
           </p>
 
           <div class="about-card__contact">
-            <span>Formation : BTS SIO / specialite SLAM</span>
+            <span>Formation : BTS SIO / sp&eacute;cialit&eacute; SLAM</span>
             <span>Localisation : Bar-le-Duc</span>
-            <span>CV : <a href="CV_Cloe_WZ.pdf" target="_blank" rel="noopener noreferrer">ouvrir le PDF</a></span>
+            <span>Objectif : d&eacute;velopper des projets web clairs, utiles et visuellement soign&eacute;s</span>
           </div>
         </div>
+
+        <aside class="about-card__highlight">
+          <p class="highlight-kicker">Document</p>
+          <h3>Mon CV</h3>
+          <p>Retrouver mon parcours, mes exp&eacute;riences et mes comp&eacute;tences dans un format complet.</p>
+          <a class="about-card__cta" href="CV_Cloe_WZ.pdf" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
+        </aside>
+      </div>
+
+      <div class="about-card__stats">
+        <article>
+          <strong>2023 - 2026</strong>
+          <span>BTS SIO option SLAM en cours</span>
+        </article>
+        <article>
+          <strong>2 stages</strong>
+          <span>Agrobio et Colinon Alexis SARL</span>
+        </article>
+        <article>
+          <strong>Stack</strong>
+          <span>HTML, CSS, JS, PHP, MySQL, Laravel, Java</span>
+        </article>
       </div>
 
       <div class="about-card__grid">
         <section class="info-block info-block-left">
-          <h3>Formation</h3>
-          <p>2016 / 2020 - Brevet des colleges, mention assez bien.</p>
-          <p>2020 / 2023 - Baccalaureat technologique STMG, option SIG.</p>
-          <p>2023 / 2026 - BTS SIO, specialite SLAM, formation en cours.</p>
+          <h3>Parcours</h3>
+          <div class="timeline-list">
+            <article class="timeline-entry">
+              <span class="timeline-entry__year">2016 / 2020</span>
+              <p>Brevet des coll&egrave;ges, mention assez bien.</p>
+              <p>Stage d'observation d'une semaine au Conseil d&eacute;partemental de la Meuse &agrave; Bar-le-Duc.</p>
+            </article>
 
-          <h3 class="mt-gap">Competences</h3>
-          <ul class="info-list">
-            <li>Creation de sites web et d'interfaces</li>
-            <li>HTML / CSS / JavaScript</li>
-            <li>PHP / MySQL / Laravel</li>
-            <li>Java</li>
-            <li>Git / GitHub / Postman</li>
+            <article class="timeline-entry">
+              <span class="timeline-entry__year">2020 / 2023</span>
+              <p>Baccalaur&eacute;at technologique STMG, option SIG.</p>
+              <p>Approche progressive des outils num&eacute;riques et de l'organisation de projet.</p>
+            </article>
+
+            <article class="timeline-entry">
+              <span class="timeline-entry__year">2023 / 2026</span>
+              <p>BTS SIO, sp&eacute;cialit&eacute; SLAM, formation en cours.</p>
+              <p>Stages effectu&eacute;s chez Agrobio, SARL Colinon Alexis et EURL Szlazak.</p>
+            </article>
+          </div>
+
+          <h3 class="mt-gap">Rep&egrave;res</h3>
+          <ul class="info-list info-list-tight">
+            <li>Cr&eacute;ation de sites web et d'interfaces</li>
+            <li>Int&eacute;gration front-end responsive</li>
+            <li>Programmation PHP, JavaScript et Java</li>
+            <li>Utilisation de Git, GitHub, Postman et MySQL</li>
           </ul>
-
-          <h3 class="mt-gap">Synthese</h3>
-          <p>Le tableau de synthese et les annexes peuvent etre ajoutes ici ou relies a un document externe.</p>
         </section>
 
         <section class="info-block info-block-right">
-          <h3>Technologies</h3>
+          <h3>Comp&eacute;tences</h3>
 
           <div class="software-showcase">
             <div class="software-icons">
@@ -164,6 +209,11 @@
                 <div><i style="width: 58%"></i></div>
               </div>
             </div>
+          </div>
+
+          <div class="about-card__secondary-cta">
+            <p>Besoin d'un aper&ccedil;u rapide du parcours complet&nbsp;?</p>
+            <a class="about-card__cta about-card__cta-secondary" href="CV_Cloe_WZ.pdf" target="_blank" rel="noopener noreferrer">T&eacute;l&eacute;charger le CV</a>
           </div>
         </section>
       </div>

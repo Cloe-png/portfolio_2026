@@ -20,7 +20,18 @@
   <main class="chapter-slider" data-active-theme="emerald">
     <header class="chapter-topbar">
       <a class="chapter-brand" href="index.html">Clo&eacute; Wlodarski-Zminka</a>
-      <nav class="chapter-nav">
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="chapters-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="chapter-nav" id="chapters-nav">
         <a class="is-active" href="chapters.html">Home</a>
         <a href="aboutme.html">Présentation</a>
         <a href="projects.html">Stages</a>
