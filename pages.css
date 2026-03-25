@@ -461,6 +461,41 @@ body.stage-page .mobile-nav-toggle span {
   filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.18));
 }
 
+.content-hero-tech {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 360px);
+  align-items: center;
+  gap: 28px;
+}
+
+.content-hero-tech__copy {
+  min-width: 0;
+}
+
+.content-hero-tech__visual {
+  position: relative;
+  width: min(30vw, 320px);
+  aspect-ratio: 1;
+  margin-left: auto;
+}
+
+.content-hero-tech__orb {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6fd3ff, #2f92ef);
+  box-shadow: 0 24px 60px rgba(1, 7, 17, 0.22);
+}
+
+.content-hero-tech__visual img {
+  position: absolute;
+  inset: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.18));
+}
+
 .stage-slide__copy-right {
   right: 8%;
   top: 17%;
@@ -653,6 +688,15 @@ body.stage-page .content-list {
     grid-template-columns: 1fr;
   }
 
+  .content-hero-tech {
+    grid-template-columns: 1fr;
+  }
+
+  .content-hero-tech__visual {
+    width: min(54vw, 280px);
+    margin: 12px auto 0;
+  }
+
   .stage-selector {
     min-height: 1040px;
   }
@@ -754,6 +798,10 @@ body.stage-page .content-list {
   .content-hero,
   .stage-showcase__intro {
     padding-top: 42px;
+  }
+
+  .content-hero-tech__visual {
+    width: min(70vw, 230px);
   }
 
   .stage-panel {
