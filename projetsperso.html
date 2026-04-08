@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | LoreRoom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=9">
+</head>
+<body class="stage-page stage-page-loreroom">
+  <div class="page-bg page-bg-violet" aria-hidden="true"></div>
+  <main class="content-shell">
+    <header class="content-topbar reveal">
+      <a class="content-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="projets-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="content-nav" id="projets-nav">
+        <a href="chapters.html">Home</a>
+        <a href="aboutme.html">Pr&eacute;sentation</a>
+        <a href="projects.html">Stages</a>
+        <a href="skills.html">Veille techno</a>
+        <a class="is-active" href="projetsperso.html">Projets perso</a>
+        <a href="futur.html">Avenir</a>
+      </nav>
+    </header>
+
+    <section class="project-header-simple reveal">
+      <h1>LoreRoom</h1>
+    </section>
+
+    <section class="stage-showcase stage-showcase-loreroom project-stage-frame reveal" data-stage-theme="violet">
+      <div class="stage-selector stage-selector-project">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Section pr&eacute;c&eacute;dente">
+          &#8249;
+        </button>
+
+        <article class="stage-slide is-active" data-stage-theme="violet">
+          <div class="stage-slide__aura"></div>
+          <div class="stage-slide__ghost">BACK</div>
+
+          <div class="stage-slide__preview stage-slide__preview-loreroom stage-slide__preview-project">
+            <div class="stage-slide__copy stage-slide__copy-left">
+              <p class="stage-slide__label">Projet personnel 01</p>
+              <h2>Backend</h2>
+              <div class="stage-slide__subcopy">
+                <strong>Laravel et logique m&eacute;tier</strong>
+                <span>Le c&oelig;ur du projet repose sur des contr&ocirc;leurs d&eacute;di&eacute;s, des middlewares et des traitements qui maintiennent les donn&eacute;es coh&eacute;rentes.</span>
+              </div>
+              <div class="scribble-note scribble-note-left">contr&ocirc;leurs + r&egrave;gles</div>
+            </div>
+
+            <div class="stage-slide__visual stage-slide__visual-loreroom stage-slide__visual-project">
+              <div class="stage-slide__orb"></div>
+              <div class="stage-slide__mark loreroom-stack-mark">
+                <span>PHP</span>
+              </div>
+              <div class="floating-note floating-note-e">middlewares</div>
+              <div class="floating-note floating-note-f">validation</div>
+            </div>
+
+            <div class="stage-slide__copy stage-slide__copy-right stage-slide__copy-right-loreroom">
+              <span>Auth</span>
+              <span>Logic</span>
+              <span>Rules</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-loreroom stage-panel-project">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Chapitre 01</p>
+                <h3>Le backend de LoreRoom g&egrave;re une vraie logique d'application, au-del&agrave; de la simple saisie</h3>
+              </div>
+              <span class="stage-panel__button stage-panel__button-muted">Backend</span>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Contr&ocirc;leurs : worlds, characters, chronicles, gallery, genealogy, lore...</span>
+              <span>Protection : auth, temp.token, session.activity, world.selected</span>
+              <span>Traitements : validations, synchronisations, exports et m&eacute;dias</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Organisation du code</p>
+                <p>Le projet est structur&eacute; par modules, avec un contr&ocirc;leur d&eacute;di&eacute; &agrave; chaque grand domaine fonctionnel. Cela rend le code plus lisible, plus maintenable et plus simple &agrave; faire &eacute;voluer.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Validation</p>
+                <p>Les formulaires valident les dates, les URLs, les fichiers audio, les images, les couleurs et plusieurs champs complexes. Le backend v&eacute;rifie donc r&eacute;ellement la coh&eacute;rence de ce qui entre dans l'application.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">S&eacute;curisation</p>
+                <p>La zone `manage` est prot&eacute;g&eacute;e par plusieurs middlewares qui combinent authentification, token temporaire, session active et contr&ocirc;le du monde s&eacute;lectionn&eacute; avant l'acc&egrave;s aux donn&eacute;es.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Exports et m&eacute;dias</p>
+                <p>Le backend g&egrave;re aussi les portraits, la galerie, certains m&eacute;dias audio et l'export PDF des fiches personnages, ce qui montre une application d&eacute;j&agrave; pens&eacute;e pour produire et restituer du contenu.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide" data-stage-theme="cyan">
+          <div class="stage-slide__aura"></div>
+          <div class="stage-slide__ghost">FRONT</div>
+
+          <div class="stage-slide__preview stage-slide__preview-loreroom stage-slide__preview-project">
+            <div class="stage-slide__copy stage-slide__copy-left">
+              <p class="stage-slide__label">Projet personnel 02</p>
+              <h2>Frontend</h2>
+              <div class="stage-slide__subcopy">
+                <strong>Interface et exp&eacute;rience</strong>
+                <span>Une interface Blade pens&eacute;e comme un vrai espace de gestion, avec une identit&eacute; visuelle forte et une navigation claire.</span>
+              </div>
+              <div class="scribble-note scribble-note-left">carnet + back-office</div>
+            </div>
+
+            <div class="stage-slide__visual stage-slide__visual-loreroom stage-slide__visual-project">
+              <div class="stage-slide__orb"></div>
+              <div class="stage-slide__mark loreroom-map-mark">
+                <span>UI</span>
+              </div>
+              <div class="floating-note floating-note-c">blade</div>
+              <div class="floating-note floating-note-d">navigation</div>
+            </div>
+
+            <div class="stage-slide__copy stage-slide__copy-right stage-slide__copy-right-loreroom">
+              <span>Layout</span>
+              <span>Views</span>
+              <span>UX</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-loreroom stage-panel-project">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Chapitre 02</p>
+                <h3>Le frontend de LoreRoom est pens&eacute; comme une interface de cr&eacute;ation, pas comme un tableau neutre</h3>
+              </div>
+              <span class="stage-panel__button stage-panel__button-alt">Frontend</span>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Technos : Blade, CSS, JavaScript</span>
+              <span>Direction : carnet de lore, navigation structurante, espace `manage` central</span>
+              <span>But : rendre la gestion agr&eacute;able malgr&eacute; la richesse des donn&eacute;es</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Vue d'ensemble</p>
+                <p>Les vues Blade sont organis&eacute;es par module, avec un layout principal qui unifie la navigation et l'identit&eacute; de l'application. Cela donne une interface homog&egrave;ne et plus simple &agrave; faire &eacute;voluer.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Ergonomie</p>
+                <ul class="content-list">
+                  <li>Navigation claire entre mondes, personnages, chroniques, lore et galerie</li>
+                  <li>Pages de gestion d&eacute;di&eacute;es &agrave; chaque grand module</li>
+                  <li>Lecture plus visuelle des donn&eacute;es gr&acirc;ce aux portraits, couleurs et m&eacute;dias</li>
+                  <li>Interface con&ccedil;ue pour manipuler beaucoup d'informations sans perdre le fil</li>
+                </ul>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Identit&eacute; visuelle</p>
+                <p>Le style est volontairement marqu&eacute;. L'interface &eacute;voque un carnet de cr&eacute;ation ou un espace de lore, ce qui rend l'application plus coh&eacute;rente avec son usage qu'un back-office standard.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Valeur</p>
+                <p>Ce frontend montre que je sais penser l'exp&eacute;rience utilisateur d'un projet riche, et pas seulement afficher des formulaires ou des listes.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide" data-stage-theme="orange">
+          <div class="stage-slide__aura"></div>
+          <div class="stage-slide__ghost">DATA</div>
+
+          <div class="stage-slide__preview stage-slide__preview-loreroom stage-slide__preview-project">
+            <div class="stage-slide__copy stage-slide__copy-left">
+              <p class="stage-slide__label">Projet personnel 03</p>
+              <h2>Base</h2>
+              <div class="stage-slide__subcopy">
+                <strong>Donn&eacute;es et structure</strong>
+                <span>Une base MySQL riche, avec entit&eacute;s reli&eacute;es, tables pivot et chronologies construites &agrave; partir de plusieurs sources.</span>
+              </div>
+              <div class="scribble-note scribble-note-left">projet vivant</div>
+            </div>
+
+            <div class="stage-slide__visual stage-slide__visual-loreroom stage-slide__visual-project">
+              <div class="stage-slide__orb"></div>
+              <div class="stage-slide__mark loreroom-section-mark">
+                <span>DB</span>
+              </div>
+              <div class="floating-note floating-note-a">relations</div>
+              <div class="floating-note floating-note-d">timelines</div>
+            </div>
+
+            <div class="stage-slide__copy stage-slide__copy-right stage-slide__copy-right-loreroom">
+              <span>MySQL</span>
+              <span>Links</span>
+              <span>Time</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-loreroom stage-panel-project">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Chapitre 03</p>
+                <h3>La base de donn&eacute;es soutient toute la richesse de l'application et permet au projet de grandir proprement</h3>
+              </div>
+              <span class="stage-panel__button">Data</span>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Tables : mondes, personnages, lieux, chroniques, lore, factions, jobs, species...</span>
+              <span>Relations : couples, ex, fratries, chroniques li&eacute;es, galerie et modules crois&eacute;s</span>
+              <span>&Eacute;volution : migrations successives et structure modulaire</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Structure relationnelle</p>
+                <p>La base relie les personnages aux mondes, lieux, chroniques, m&eacute;tiers, esp&egrave;ces, images et relations. Cette organisation permet de croiser les informations au lieu de les laisser isol&eacute;es.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Tables pivot</p>
+                <p>Le projet utilise aussi des tables pivot pour les ex-partenaires, les chroniques li&eacute;es aux personnages et d'autres liens crois&eacute;s. Cela donne une structure plus souple et plus riche.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Chronologies</p>
+                <p>Les frises temporelles s'appuient sur des donn&eacute;es de plusieurs origines : chroniques, &eacute;v&eacute;nements li&eacute;s aux personnages, naissances et d&eacute;c&egrave;s. La base sert donc directement la lecture narrative du projet.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Ce que cela montre</p>
+                <p>Cette partie montre que je sais mod&eacute;liser des donn&eacute;es complexes et faire tenir ensemble plusieurs modules dans une structure propre, &eacute;volutive et exploitable par l'interface comme par la logique m&eacute;tier.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide" data-stage-theme="orange">
+          <div class="stage-slide__aura"></div>
+          <div class="stage-slide__ghost">LOGIC</div>
+
+          <div class="stage-slide__preview stage-slide__preview-loreroom stage-slide__preview-project">
+            <div class="stage-slide__copy stage-slide__copy-left">
+              <p class="stage-slide__label">Projet personnel 04</p>
+              <h2>Logique</h2>
+              <div class="stage-slide__subcopy">
+                <strong>Coh&eacute;rence applicative</strong>
+                <span>Les donn&eacute;es sont transform&eacute;es en syst&egrave;me coh&eacute;rent gr&acirc;ce aux synchronisations, timelines et reconstructions automatiques.</span>
+              </div>
+              <div class="scribble-note scribble-note-left">plus qu'un CRUD</div>
+            </div>
+
+            <div class="stage-slide__visual stage-slide__visual-loreroom stage-slide__visual-project">
+              <div class="stage-slide__orb"></div>
+              <div class="stage-slide__mark loreroom-core-mark">
+                <span>LR</span>
+              </div>
+              <div class="floating-note floating-note-c">auto links</div>
+              <div class="floating-note floating-note-f">timeline</div>
+            </div>
+
+            <div class="stage-slide__copy stage-slide__copy-right stage-slide__copy-right-loreroom">
+              <span>Flow</span>
+              <span>Links</span>
+              <span>Rules</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-loreroom stage-panel-project">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Chapitre 04</p>
+                <h3>La logique m&eacute;tier relie les modules entre eux et transforme les donn&eacute;es en exp&eacute;rience de lecture</h3>
+              </div>
+              <span class="stage-panel__button">Logique</span>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Relations : couples, ex, famille, fratries et liens d&eacute;riv&eacute;s</span>
+              <span>Lecture : timelines globales et par personnage</span>
+              <span>Usage : dashboard `manage`, g&eacute;n&eacute;alogie, galerie, exports</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Synchronisations automatiques</p>
+                <p>Le `CharacterController` g&egrave;re les conjoints dans les deux sens, les ex-partenaires et plusieurs reconstructions de relations familiales afin d'&eacute;viter les incoh&eacute;rences entre les fiches.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Frises temporelles</p>
+                <p>Les chroniques, les &eacute;v&eacute;nements personnages, les naissances et les d&eacute;c&egrave;s sont fusionn&eacute;s dans des lectures chronologiques globales ou individuelles. Les donn&eacute;es deviennent alors vraiment lisibles et utiles.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Dashboard et lecture</p>
+                <p>Le tableau de bord `manage` rassemble des compteurs, des anniversaires, les chroniques du jour et les &eacute;v&eacute;nements &agrave; venir. On est bien sur un outil de gestion, pas juste sur un stockage de fiches.</p>
+              </section>
+
+              <section class="content-card content-card-compact content-card-note">
+                <p class="card-index">Valeur du projet</p>
+                <p>C'est cette logique m&eacute;tier qui fait passer LoreRoom d'un ensemble de formulaires &agrave; une application compl&egrave;te, coh&eacute;rente et d&eacute;j&agrave; pens&eacute;e pour un usage r&eacute;el.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Section suivante">
+          &#8250;
+        </button>
+      </div>
+
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir le backend de LoreRoom"></button>
+        <button type="button" aria-label="Voir le frontend de LoreRoom"></button>
+        <button type="button" aria-label="Voir la base de donn&eacute;es de LoreRoom"></button>
+        <button type="button" aria-label="Voir la logique m&eacute;tier de LoreRoom"></button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

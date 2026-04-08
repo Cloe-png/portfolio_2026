@@ -64,12 +64,13 @@ function setupMobileNav() {
 
 function setupStageShowcase() {
   const showcase = document.querySelector(".stage-showcase");
+  const selector = showcase?.querySelector(".stage-selector");
   const slides = Array.from(document.querySelectorAll(".stage-slide"));
   const dots = Array.from(document.querySelectorAll("#stagePagination button"));
   const prevButton = document.querySelector("#prevStage");
   const nextButton = document.querySelector("#nextStage");
 
-  if (!showcase || !slides.length) {
+  if (!showcase || !selector || !slides.length) {
     return;
   }
 
@@ -78,6 +79,18 @@ function setupStageShowcase() {
   let touchStartY = 0;
   let touchDeltaX = 0;
   let touchDeltaY = 0;
+
+  const syncSelectorHeight = () => {
+    const activeSlide = slides[activeIndex];
+
+    if (!activeSlide) {
+      return;
+    }
+
+    requestAnimationFrame(() => {
+      selector.style.minHeight = `${Math.ceil(activeSlide.scrollHeight + 24)}px`;
+    });
+  };
 
   const setActiveSlide = (index) => {
     activeIndex = (index + slides.length) % slides.length;
@@ -91,6 +104,7 @@ function setupStageShowcase() {
     });
 
     showcase.dataset.stageTheme = slides[activeIndex].dataset.stageTheme || "orange";
+    syncSelectorHeight();
   };
 
   prevButton?.addEventListener("click", () => {
@@ -146,6 +160,8 @@ function setupStageShowcase() {
 
     setActiveSlide(activeIndex - 1);
   });
+
+  window.addEventListener("resize", syncSelectorHeight);
 
   setActiveSlide(0);
 }

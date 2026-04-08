@@ -6,10 +6,10 @@
   <title>Portfolio | Veille technologique</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=12">
 </head>
-<body>
+<body class="stage-page stage-page-flappy">
   <div class="page-bg page-bg-cyan" aria-hidden="true"></div>
   <main class="content-shell">
     <header class="content-topbar reveal">
@@ -27,62 +27,267 @@
       </button>
       <nav class="content-nav" id="skills-nav">
         <a href="chapters.html">Home</a>
-        <a href="aboutme.html">Présentation</a>
+        <a href="aboutme.html">Pr&eacute;sentation</a>
         <a href="projects.html">Stages</a>
         <a class="is-active" href="skills.html">Veille techno</a>
-        <a href="contact.html">projets perso</a>
+        <a href="projetsperso.html">Projets perso</a>
         <a href="futur.html">Avenir</a>
       </nav>
     </header>
 
-    <section class="content-hero content-hero-tech reveal">
-      <div class="content-hero-tech__copy">
-        <p class="content-kicker">03 / Veille technologique</p>
-        <h1>Une page de veille basee sur la structure de l'ancien portfolio, prete a accueillir les sujets suivis.</h1>
-        <p class="content-lead">
-          L'ancienne page <code>veille_techno.html</code> etait vide. J'ai donc conserve son role dans le nouveau portfolio
-          en la transformant en espace clair pour presenter les themes, les sources et les conclusions de veille.
-        </p>
+    <section class="stage-showcase reveal" data-stage-theme="cyan">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Sujet pr&eacute;c&eacute;dent">
+          &#8249;
+        </button>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy is-active" data-stage-theme="cyan">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Veille 01</p>
+              <h2>Lua</h2>
+              <p class="stage-clean-subtitle">Un langage simple, l&eacute;ger et lisible</p>
+              <p class="stage-clean-text">Une premi&egrave;re partie de veille centr&eacute;e sur la d&eacute;couverte du langage Lua, sa syntaxe, sa simplicit&eacute; et son int&eacute;r&ecirc;t pour apprendre la logique de programmation.</p>
+            </div>
+
+            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
+              <div class="flappy-scene flappy-scene-lua">
+                <span class="flappy-sun"></span>
+                <span class="flappy-cloud flappy-cloud-a"></span>
+                <span class="flappy-cloud flappy-cloud-b"></span>
+                <span class="flappy-pipe flappy-pipe-left"></span>
+                <span class="flappy-pipe flappy-pipe-right"></span>
+                <span class="flappy-bird-mark"></span>
+                <span class="flappy-badge-label">LUA</span>
+              </div>
+            </div>
+
+            <div class="stage-clean-side">
+              <span>Langage l&eacute;ger</span>
+              <span>Syntaxe claire</span>
+              <span>Premier envol</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-clean">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Axe 01</p>
+                <h3>Lua : un langage adapt&eacute; &agrave; l'apprentissage, au prototypage et aux petits projets</h3>
+              </div>
+              <a class="stage-panel__button" href="https://www.lua.org/" target="_blank" rel="noopener noreferrer">Voir le site officiel</a>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Sujet : d&eacute;couverte du langage Lua</span>
+              <span>Points observ&eacute;s : syntaxe, structure, simplicit&eacute;, lisibilit&eacute;</span>
+              <span>Int&eacute;r&ecirc;t : apprendre la logique sans lourdeur syntaxique</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact">
+                <p class="card-index">D&eacute;finition</p>
+                <p>Lua est un langage de programmation con&ccedil;u pour &ecirc;tre l&eacute;ger, rapide et simple &agrave; int&eacute;grer dans d'autres projets. Il est souvent utilis&eacute; pour les scripts, les outils et le jeu vid&eacute;o.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Pourquoi ce choix</p>
+                <p>J'ai choisi Lua pour ma veille car c'est un langage diff&eacute;rent de ceux vus le plus souvent en cours, tout en restant accessible pour une d&eacute;couverte concr&egrave;te.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Points forts</p>
+                <ul class="content-list">
+                  <li>Syntaxe courte et lisible</li>
+                  <li>Facile &agrave; comprendre pour un d&eacute;butant</li>
+                  <li>Rapide &agrave; tester sur de petits projets</li>
+                  <li>Utilis&eacute; dans plusieurs moteurs et outils</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Ce que j'ai observ&eacute;</p>
+                <p>Lua permet de se concentrer sur la logique du programme. On passe moins de temps sur la forme du code et davantage sur le fonctionnement r&eacute;el de ce qu'on construit.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Comparaison</p>
+                <p>Par rapport &agrave; d'autres langages plus verbeux, Lua donne une impression de simplicit&eacute; qui peut &ecirc;tre tr&egrave;s utile pour prototyper une id&eacute;e rapidement.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Bilan</p>
+                <p>Cette premi&egrave;re partie de veille m'a permis de comprendre que Lua est une bonne porte d'entr&eacute;e pour travailler la logique, les structures de base et les petits programmes interactifs.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Veille 02</p>
+              <h2>LOVE2D</h2>
+              <p class="stage-clean-subtitle">Un framework pens&eacute; pour les jeux 2D en Lua</p>
+              <p class="stage-clean-text">Une deuxi&egrave;me partie de veille consacr&eacute;e &agrave; LOVE2D, afin de comprendre comment un framework peut fournir la fen&ecirc;tre, le rendu, les entr&eacute;es clavier et la boucle de jeu.</p>
+            </div>
+
+            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
+              <div class="flappy-scene flappy-scene-love">
+                <span class="flappy-sun"></span>
+                <span class="flappy-cloud flappy-cloud-a"></span>
+                <span class="flappy-cloud flappy-cloud-c"></span>
+                <span class="flappy-pipe flappy-pipe-left"></span>
+                <span class="flappy-pipe flappy-pipe-right"></span>
+                <span class="flappy-coin flappy-coin-a"></span>
+                <span class="flappy-coin flappy-coin-b"></span>
+                <span class="flappy-badge-label">LOVE2D</span>
+              </div>
+            </div>
+
+            <div class="stage-clean-side">
+              <span>Framework 2D</span>
+              <span>Boucle de jeu</span>
+              <span>Collision + rendu</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-clean">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Axe 02</p>
+                <h3>LOVE2D : un cadre simple pour relier Lua &agrave; un vrai projet de jeu</h3>
+              </div>
+              <a class="stage-panel__button stage-panel__button-alt" href="https://love2d.org/" target="_blank" rel="noopener noreferrer">Voir le site officiel</a>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Sujet : framework LOVE2D</span>
+              <span>Points observ&eacute;s : fen&ecirc;tre, dessin, clavier, structure du jeu</span>
+              <span>Int&eacute;r&ecirc;t : passer d'un langage &agrave; une application concr&egrave;te</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact">
+                <p class="card-index">R&ocirc;le du framework</p>
+                <p>LOVE2D prend en charge les aspects techniques de base d'un jeu : ouverture de la fen&ecirc;tre, affichage, son, gestion du temps et entr&eacute;es clavier/souris.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Pourquoi c'est utile</p>
+                <p>Au lieu de tout construire soi-m&ecirc;me, le framework offre une base pr&ecirc;te &agrave; utiliser. Cela permet de consacrer davantage de temps &agrave; la logique du jeu et &agrave; l'exp&eacute;rimentation.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Fonctions importantes</p>
+                <ul class="content-list">
+                  <li><code>love.load</code> pour initialiser</li>
+                  <li><code>love.update</code> pour mettre &agrave; jour</li>
+                  <li><code>love.draw</code> pour afficher</li>
+                  <li><code>love.keypressed</code> pour g&eacute;rer les touches</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Ce que j'ai compris</p>
+                <p>LOVE2D propose une structure simple &agrave; suivre, ce qui aide &agrave; comprendre le cycle de vie d'un jeu sans se perdre dans une architecture trop complexe.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Lien avec ma veille</p>
+                <p>Ce framework m'a permis de transformer une recherche sur Lua en un projet jouable, ce qui rend la veille plus concr&egrave;te et plus facile &agrave; expliquer.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Bilan</p>
+                <p>LOVE2D est un outil coh&eacute;rent pour d&eacute;buter en jeu 2D avec Lua. Il aide &agrave; comprendre comment un programme interactif est organis&eacute; tout en restant abordable.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="violet">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Veille 03</p>
+              <h2>Flappy Bird</h2>
+              <p class="stage-clean-subtitle">Une application concr&egrave;te pour valider la veille</p>
+              <p class="stage-clean-text">La troisi&egrave;me partie relie la veille &agrave; un mini-projet concret : un Flappy Bird cod&eacute; en Lua avec LOVE2D pour mettre en pratique les notions observ&eacute;es.</p>
+            </div>
+
+            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
+              <div class="flappy-scene flappy-scene-project">
+                <span class="flappy-sun"></span>
+                <span class="flappy-cloud flappy-cloud-b"></span>
+                <span class="flappy-cloud flappy-cloud-c"></span>
+                <span class="flappy-pipe flappy-pipe-left"></span>
+                <span class="flappy-pipe flappy-pipe-right"></span>
+                <span class="flappy-coin flappy-coin-a"></span>
+                <span class="flappy-coin flappy-coin-c"></span>
+                <span class="flappy-bird-mark flappy-bird-mark-player"></span>
+                <span class="flappy-badge-label">PLAY</span>
+              </div>
+            </div>
+
+            <div class="stage-clean-side">
+              <span>Projet concret</span>
+              <span>Lua + LOVE2D</span>
+              <span>D&eacute;mo jouable</span>
+            </div>
+          </div>
+
+          <div class="stage-panel stage-panel-clean">
+            <div class="stage-panel__header">
+              <div>
+                <p class="card-index">Axe 03</p>
+                <h3>Un Flappy Bird pour transformer la veille technologique en vraie exp&eacute;rimentation</h3>
+              </div>
+              <a class="stage-panel__button" href="flappy_bird/README.md" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+            </div>
+
+            <div class="stage-panel__meta">
+              <span>Projet : Flappy Bird en Lua</span>
+              <span>Objectif : mettre en pratique la veille</span>
+              <span>D&eacute;monstration : pr&eacute;vue en local pendant l'oral</span>
+            </div>
+
+            <div class="stage-panel__grid">
+              <section class="content-card content-card-compact">
+                <p class="card-index">Principe</p>
+                <p>Le projet reprend le principe d'un Flappy Bird avec un oiseau, des tuyaux, un score, des vies, une difficult&eacute; progressive et une petite personnalisation visuelle.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Objectif p&eacute;dagogique</p>
+                <p>L'id&eacute;e n'&eacute;tait pas seulement de faire un jeu, mais surtout de comprendre comment Lua et LOVE2D peuvent &ecirc;tre utilis&eacute;s ensemble dans un projet complet mais accessible.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Notions mises en pratique</p>
+                <ul class="content-list">
+                  <li>Boucle de jeu</li>
+                  <li>Gestion du clavier</li>
+                  <li>Collisions</li>
+                  <li>Score et sauvegarde</li>
+                  <li>Organisation d'un fichier de jeu</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Ce que cela montre</p>
+                <p>Ce projet montre qu'une veille technologique peut d&eacute;boucher sur une r&eacute;alisation concr&egrave;te. Cela permet de mieux comprendre les outils en les utilisant vraiment.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Lien avec l'oral</p>
+                <p>Le jury pourra voir que la veille ne se limite pas &agrave; des recherches th&eacute;oriques, mais qu'elle a &eacute;t&eacute; transform&eacute;e en exp&eacute;rimentation personnelle et en mini-projet jouable.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Bilan personnel</p>
+                <p>Cette veille m'a permis de d&eacute;couvrir un langage diff&eacute;rent, de comprendre l'int&eacute;r&ecirc;t d'un framework de jeu et de relier l'apprentissage technique &agrave; une vraie production personnelle.</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Sujet suivant">
+          &#8250;
+        </button>
       </div>
-      <div class="content-hero-tech__visual" aria-hidden="true">
-        <div class="content-hero-tech__orb"></div>
-        <img src="Question.png" alt="">
+
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir la partie Lua"></button>
+        <button type="button" aria-label="Voir la partie LOVE2D"></button>
+        <button type="button" aria-label="Voir la partie Flappy Bird"></button>
       </div>
-    </section>
-
-    <section class="skill-columns">
-      <article class="content-card reveal">
-        <p class="card-index">Objectif</p>
-        <h2>Pourquoi cette veille</h2>
-        <ul class="content-list">
-          <li>Suivre l'evolution des outils et pratiques du developpement web</li>
-          <li>Identifier les tendances utiles pour les projets scolaires et personnels</li>
-          <li>Conserver une trace des apprentissages sur plusieurs mois</li>
-        </ul>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Sources</p>
-        <h2>Canaux a surveiller</h2>
-        <ul class="content-list">
-          <li>Documentations officielles des frameworks et navigateurs</li>
-          <li>Articles techniques, newsletters et videos de vulgarisation</li>
-          <li>GitHub, blogs de developpeurs et retours d'experience</li>
-        </ul>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Themes</p>
-        <h2>Sujets possibles</h2>
-        <ul class="content-list">
-          <li>Accessibilite et bonnes pratiques front-end</li>
-          <li>Nouveautes CSS et animations modernes</li>
-          <li>Outils d'API, tests et qualite logicielle</li>
-          <li>Hebergement et deploiement de projets web</li>
-        </ul>
-      </article>
     </section>
   </main>
-  <script src="pages.js"></script>
+  <script src="assets/js/pages.js"></script>
 </body>
 </html>

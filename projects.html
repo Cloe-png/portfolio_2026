@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css?v=3">
+  <link rel="stylesheet" href="assets/css/pages.css?v=11">
 </head>
 <body class="stage-page">
   <div class="page-bg page-bg-orange" aria-hidden="true"></div>
@@ -27,237 +27,265 @@
       </button>
       <nav class="content-nav" id="projects-nav">
         <a href="chapters.html">Home</a>
-        <a href="aboutme.html">Pr&eacute;sentation</a>
+        <a href="aboutme.html">Présentation</a>
         <a class="is-active" href="projects.html">Stages</a>
         <a href="skills.html">Veille techno</a>
-        <a href="contact.html">projets perso</a>
+        <a href="projetsperso.html">Projets perso</a>
         <a href="futur.html">Avenir</a>
       </nav>
     </header>
 
     <section class="stage-showcase reveal" data-stage-theme="orange">
-      <div class="stage-selector">
-        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Ann&eacute;e pr&eacute;c&eacute;dente">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Stage pr&eacute;c&eacute;dent">
           &#8249;
         </button>
 
-        <article class="stage-slide is-active" data-stage-theme="orange">
-          <div class="stage-slide__aura"></div>
-          <div class="stage-slide__ghost">2024</div>
-
-          <div class="stage-slide__preview">
-            <div class="stage-slide__copy stage-slide__copy-left">
-              <p class="stage-slide__label">Stage 01</p>
-              <h2>AGROBIO</h2>
-              <div class="stage-slide__subcopy">
-                <strong>2024</strong>
-                <span>Laboratoire d'analyses agricoles, Bar-le-Duc</span>
-              </div>
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="orange">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Stage 01</p>
+              <h2>AgroBio</h2>
+              <p class="stage-clean-subtitle">Laboratoire d'analyses et progression technique</p>
+              <p class="stage-clean-text">Un premier stage de BTS SIO centr&eacute; sur le PHP, Java, la programmation orient&eacute;e objet et la r&eacute;solution de probl&egrave;mes techniques.</p>
             </div>
 
-            <div class="stage-slide__visual">
-              <div class="stage-slide__orb"></div>
-              <div class="stage-slide__mark stage-slide__mark-image">
-                <img src="Owen.png" alt="Illustration stage">
-              </div>
+            <div class="stage-clean-badge" aria-hidden="true">
+              <img class="stage-clean-logo stage-clean-logo-agrobio" src="assets/images/logo1" alt="Logo AgroBio">
             </div>
 
-            <div class="stage-slide__copy stage-slide__copy-right">
-              <span>PHP</span>
-              <span>JAVA</span>
-              <span>SQL</span>
+            <div class="stage-clean-side">
+              <span>Bar-le-Duc</span>
+              <span>27 mai 2024</span>
+              <span>5 juillet 2024</span>
             </div>
           </div>
 
-          <div class="stage-panel">
+          <div class="stage-panel stage-panel-clean">
             <div class="stage-panel__header">
               <div>
-                <p class="card-index">Chapitre 01</p>
-                <h3>Stage 2024 - Agrobio</h3>
+                <p class="card-index">Ann&eacute;e 2024</p>
+                <h3>AgroBio : un stage tr&egrave;s formateur pour consolider mes bases de d&eacute;veloppement</h3>
               </div>
-              <a class="stage-panel__button" href="Rapport1.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+              <a class="stage-panel__button" href="assets/pdf/Rapport1.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
             </div>
 
             <div class="stage-panel__meta">
-              <span>P&eacute;riode : 27 mai 2024 - 5 juillet 2024</span>
-              <span>Entreprise : Agro Bio, Bar-le-Duc</span>
-              <span>Technos : PHP, Java, phpMyAdmin, WampServer</span>
+              <span>Entreprise : Agro Bio Laboratoires d'analyses industrielles &agrave; Bar-le-Duc</span>
+              <span>P&eacute;riode : du 27 mai 2024 au 5 juillet 2024</span>
+              <span>Axes : PHP, Java, POO, environnement local, autonomie</span>
             </div>
 
             <div class="stage-panel__grid">
               <section class="content-card content-card-compact">
-                <p class="card-index">Contexte</p>
-                <p>AGROBIO est un laboratoire d'analyses agricoles situ&eacute; &agrave; Bar-le-Duc. L'entreprise analyse des &eacute;chantillons pour v&eacute;rifier le respect des normes sanitaires et joue un r&ocirc;le important dans la s&eacute;curit&eacute; alimentaire.</p>
+                <p class="card-index">L'entreprise</p>
+                <p>AgroBio est un laboratoire d'analyses agricoles et agroalimentaires. Son activit&eacute; repose sur la fiabilit&eacute; des traitements et des donn&eacute;es, ce qui m'a permis de d&eacute;couvrir un cadre professionnel exigeant et concret.</p>
               </section>
-
               <section class="content-card content-card-compact">
-                <p class="card-index">Travaux r&eacute;alis&eacute;s</p>
+                <p class="card-index">Objectif du stage</p>
+                <p>Le but &eacute;tait de renforcer mes comp&eacute;tences en programmation, surtout en PHP et en Java, gr&acirc;ce &agrave; des exercices progressifs, des mini-projets et un accompagnement technique.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">T&acirc;ches r&eacute;alis&eacute;es</p>
                 <ul class="content-list">
-                  <li>Exercices PHP et cr&eacute;ation d'un blog avec ajout, modification et suppression</li>
-                  <li>Syst&egrave;me d'inventaire orient&eacute; objet avec gestion des stocks</li>
-                  <li>R&eacute;solution d'un blocage WampServer / phpMyAdmin</li>
-                  <li>Projet Java de biblioth&egrave;que virtuelle avec export Excel</li>
+                  <li>Exercices PHP pour retravailler les bases</li>
+                  <li>Cr&eacute;ation d'un blog avec ajout, modification et suppression de publications</li>
+                  <li>D&eacute;veloppement d'un syst&egrave;me d'inventaire orient&eacute; objet avec gestion des stocks</li>
+                  <li>Travail sur un projet Java de biblioth&egrave;que virtuelle avec g&eacute;n&eacute;ration d'un fichier Excel</li>
                 </ul>
               </section>
-
+              <section class="content-card content-card-compact">
+                <p class="card-index">D&eacute;pannage technique</p>
+                <p>J'ai aussi r&eacute;solu un probl&egrave;me WampServer qui bloquait l'acc&egrave;s &agrave; phpMyAdmin. Cette situation m'a appris &agrave; diagnostiquer un environnement local, tester plusieurs solutions et d&eacute;bloquer un outil essentiel au travail.</p>
+              </section>
               <section class="content-card content-card-compact">
                 <p class="card-index">Comp&eacute;tences acquises</p>
                 <ul class="content-list">
                   <li>Consolidation des bases en PHP</li>
-                  <li>Travail plus autonome avec VS Code, phpMyAdmin et WampServer</li>
-                  <li>Approfondissement du Java</li>
-                  <li>R&eacute;solution autonome de probl&egrave;mes techniques</li>
+                  <li>Premiers automatismes en programmation orient&eacute;e objet</li>
+                  <li>Progression en Java &agrave; travers un projet concret</li>
+                  <li>Utilisation plus autonome de Visual Studio Code, phpMyAdmin et WampServer</li>
                 </ul>
               </section>
-
               <section class="content-card content-card-compact">
-                <p class="card-index">Bilan</p>
-                <p>Ce stage m'a permis de mesurer mes progr&egrave;s techniques et de mieux comprendre l'importance de l'informatique dans l'agroalimentaire, tout en clarifiant mon projet professionnel dans le d&eacute;veloppement.</p>
+                <p class="card-index">Bilan personnel</p>
+                <p>Ce stage a &eacute;t&eacute; tr&egrave;s formateur. M&ecirc;me si le projet Java n'a pas &eacute;t&eacute; termin&eacute; compl&egrave;tement, j'ai nettement progress&eacute;, gagn&eacute; en autonomie et mieux confirm&eacute; mon int&eacute;r&ecirc;t pour le d&eacute;veloppement.</p>
               </section>
             </div>
           </div>
         </article>
 
-        <article class="stage-slide" data-stage-theme="cyan">
-          <div class="stage-slide__aura"></div>
-          <div class="stage-slide__ghost">2025</div>
-
-          <div class="stage-slide__preview">
-            <div class="stage-slide__copy stage-slide__copy-left">
-              <p class="stage-slide__label">Stage 02</p>
-              <h2>COLINON</h2>
-              <div class="stage-slide__subcopy">
-                <strong>2025</strong>
-                <span>Site vitrine, int&eacute;gration et mise en ligne</span>
-              </div>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Stage 02</p>
+              <h2>Colinon Alexis SARL</h2>
+              <p class="stage-clean-subtitle">Cr&eacute;ation d'un site web et mise en production</p>
+              <p class="stage-clean-text">Une mission orient&eacute;e web avec r&eacute;alisation du site, adaptation &agrave; une r&eacute;f&eacute;rence, nom de domaine et mise en ligne chez OVHcloud.</p>
             </div>
 
-            <div class="stage-slide__visual">
-              <div class="stage-slide__orb"></div>
-              <div class="stage-slide__mark">
-                <span>25</span>
-              </div>
+            <div class="stage-clean-badge" aria-hidden="true">
+              <img class="stage-clean-logo stage-clean-logo-colinon" src="assets/images/logo2.png" alt="Logo Colinon Alexis SARL">
             </div>
 
-            <div class="stage-slide__copy stage-slide__copy-right">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>OVH</span>
+            <div class="stage-clean-side">
+              <span>Villers-le-Sec</span>
+              <span>6 janvier 2025</span>
+              <span>15 f&eacute;vrier 2025</span>
             </div>
           </div>
 
-          <div class="stage-panel">
+          <div class="stage-panel stage-panel-clean">
             <div class="stage-panel__header">
               <div>
-                <p class="card-index">Chapitre 02</p>
-                <h3>Stage 2025 - SARL Colinon Alexis</h3>
+                <p class="card-index">Ann&eacute;e 2025</p>
+                <h3>Colinon Alexis SARL : un stage orient&eacute; r&eacute;alisation web, publication et autonomie</h3>
               </div>
-              <a class="stage-panel__button" href="Rapport2.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+              <a class="stage-panel__button stage-panel__button-alt" href="assets/pdf/Rapport2.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
             </div>
 
             <div class="stage-panel__meta">
-              <span>P&eacute;riode : 6 janvier 2025 - 15 f&eacute;vrier 2025</span>
-              <span>Entreprise : Colinon Alexis SARL, Villers-le-Sec</span>
-              <span>Technos : HTML, CSS, JavaScript, OVHCloud</span>
+              <span>Entreprise : Colinon Alexis SARL &agrave; Villers-le-Sec</span>
+              <span>P&eacute;riode : du 6 janvier 2025 au 15 f&eacute;vrier 2025</span>
+              <span>Axes : HTML, CSS, JavaScript, h&eacute;bergement, charte graphique</span>
             </div>
 
             <div class="stage-panel__grid">
               <section class="content-card content-card-compact">
-                <p class="card-index">Contexte</p>
-                <p>L'entreprise Colinon Alexis SARL est sp&eacute;cialis&eacute;e dans les travaux de pl&acirc;trerie et d'am&eacute;nagement int&eacute;rieur. Ce stage m'a permis de travailler sur une mission web compl&egrave;te dans un cadre professionnel.</p>
+                <p class="card-index">L'entreprise</p>
+                <p>Colinon Alexis SARL est une entreprise sp&eacute;cialis&eacute;e dans la pl&acirc;trerie et l'am&eacute;nagement int&eacute;rieur. Ce stage m'a permis de travailler sur un besoin web concret li&eacute; &agrave; une activit&eacute; professionnelle r&eacute;elle.</p>
               </section>
-
               <section class="content-card content-card-compact">
-                <p class="card-index">Travaux r&eacute;alis&eacute;s</p>
+                <p class="card-index">Mission confi&eacute;e</p>
+                <p>J'ai &eacute;t&eacute; charg&eacute;e de cr&eacute;er un site web &agrave; partir d'une r&eacute;f&eacute;rence donn&eacute;e par l'entreprise, en respectant l'identit&eacute; souhait&eacute;e et le rendu attendu.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">T&acirc;ches r&eacute;alis&eacute;es</p>
                 <ul class="content-list">
-                  <li>Cr&eacute;ation d'un site web &agrave; partir d'une r&eacute;f&eacute;rence</li>
+                  <li>Cr&eacute;ation du site web et int&eacute;gration des pages</li>
+                  <li>Adaptation du design &agrave; partir d'une r&eacute;f&eacute;rence visuelle</li>
                   <li>R&eacute;servation du nom de domaine</li>
-                  <li>Mise en ligne du site chez OVHCloud</li>
+                  <li>Mise en ligne du site et gestion de l'h&eacute;bergement sur OVHcloud</li>
                 </ul>
               </section>
-
               <section class="content-card content-card-compact">
-                <p class="card-index">Comp&eacute;tences acquises</p>
+                <p class="card-index">Comp&eacute;tences techniques</p>
                 <ul class="content-list">
-                  <li>D&eacute;veloppement web front-end</li>
-                  <li>Gestion d'h&eacute;bergement et de mise en ligne</li>
-                  <li>Respect d'une charte graphique</li>
-                  <li>Autonomie sur une mission compl&egrave;te</li>
+                  <li>D&eacute;veloppement web en HTML, CSS et JavaScript</li>
+                  <li>Respect d'une charte graphique et adaptation &agrave; une demande pr&eacute;cise</li>
+                  <li>D&eacute;couverte de la gestion d'un nom de domaine et de l'h&eacute;bergement</li>
+                  <li>Mise en production d'un site sur une infrastructure r&eacute;elle</li>
                 </ul>
               </section>
-
               <section class="content-card content-card-compact">
-                <p class="card-index">Bilan</p>
-                <p>L'&eacute;coute et l'accompagnement re&ccedil;us pendant ce stage m'ont permis d'affiner mon projet professionnel et de gagner en autonomie sur un vrai projet de site vitrine.</p>
+                <p class="card-index">Comp&eacute;tences transversales</p>
+                <p>Cette exp&eacute;rience m'a aussi permis de progresser en autonomie, en adaptabilit&eacute; et en gestion de projet, puisque j'ai suivi la mission jusqu'&agrave; sa publication.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Bilan personnel</p>
+                <p>Ce stage a renforc&eacute; mon int&eacute;r&ecirc;t pour le d&eacute;veloppement web. J'y ai vu le cycle complet d'un projet : conception, r&eacute;alisation, mise en ligne et livraison &agrave; une entreprise.</p>
               </section>
             </div>
           </div>
         </article>
 
-        <article class="stage-slide" data-stage-theme="violet">
-          <div class="stage-slide__aura"></div>
-          <div class="stage-slide__ghost">2026</div>
-
-          <div class="stage-slide__preview">
-            <div class="stage-slide__copy stage-slide__copy-left">
-              <p class="stage-slide__label">Stage 03</p>
-              <h2>SZLAZAK</h2>
-              <div class="stage-slide__subcopy">
-                <strong>2026</strong>
-                <span>Ann&eacute;e en cours de compl&eacute;tion dans le portfolio</span>
-              </div>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="violet">
+          <div class="stage-clean-hero">
+            <div class="stage-clean-main">
+              <p class="stage-clean-label">Stage 03</p>
+              <h2>EURL Szlazak</h2>
+              <p class="stage-clean-subtitle">D&eacute;veloppement web et digitalisation des outils internes</p>
+              <p class="stage-clean-text">Un troisi&egrave;me stage orient&eacute; conception web, d&eacute;ploiement et organisation interne, avec la r&eacute;alisation d'un site vitrine et d'une application de gestion pour l'entreprise.</p>
             </div>
 
-            <div class="stage-slide__visual">
-              <div class="stage-slide__orb"></div>
-              <div class="stage-slide__mark">
-                <span>26</span>
-              </div>
+            <div class="stage-clean-badge" aria-hidden="true">
+              <img class="stage-clean-logo stage-clean-logo-szlazak" src="assets/images/logo3.png" alt="Logo EURL Szlazak">
             </div>
 
-            <div class="stage-slide__copy stage-slide__copy-right">
-              <span>PROJET</span>
-              <span>MISSION</span>
-              <span>SUITE</span>
+            <div class="stage-clean-side">
+              <span>EURL Szlazak</span>
+              <span>12 janvier 2026</span>
+              <span>20 f&eacute;vrier 2026</span>
             </div>
           </div>
 
-          <div class="stage-panel">
+          <div class="stage-panel stage-panel-clean">
             <div class="stage-panel__header">
               <div>
-                <p class="card-index">Chapitre 03</p>
-                <h3>Stage 2026 - EURL Szlazak</h3>
+                <p class="card-index">Ann&eacute;e 2026</p>
+                <h3>EURL Szlazak : une application web Laravel pens&eacute;e pour les besoins du terrain</h3>
               </div>
-              <span class="stage-panel__button stage-panel__button-muted">Rapport &agrave; ajouter</span>
+              <a class="stage-panel__button" href="assets/pdf/Rapport3.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
             </div>
 
             <div class="stage-panel__meta">
-              <span>Ann&eacute;e : 2026</span>
               <span>Entreprise : EURL Szlazak</span>
-              <span>&Eacute;tat : contenu en cours de compl&eacute;tion</span>
+              <span>P&eacute;riode : du 12 janvier 2026 au 20 f&eacute;vrier 2026</span>
+              <span>Axes : d&eacute;veloppement web, digitalisation, organisation interne</span>
             </div>
 
-            <div class="stage-panel__grid stage-panel__grid-single">
+            <div class="stage-panel__grid">
               <section class="content-card content-card-compact">
-                <p class="card-index">Bilan 2026</p>
-                <p>Le portfolio d'origine ne contenait pas encore le d&eacute;tail complet de cette ann&eacute;e. Cette section reste pr&ecirc;te &agrave; accueillir les missions men&eacute;es, les acquis techniques et le rapport final d&egrave;s qu'il sera disponible.</p>
+                <p class="card-index">Vue d'ensemble</p>
+                <p>Durant ce stage, ma mission principale a &eacute;t&eacute; de d&eacute;velopper des solutions num&eacute;riques pour l'entreprise. J'ai r&eacute;alis&eacute; un site web vitrine ainsi qu'une application web de gestion interne afin d'optimiser le suivi des chantiers, des &eacute;quipes et des ressources.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Mission confi&eacute;e</p>
+                <p>Le stage &eacute;tait centr&eacute; sur la digitalisation des outils de l'entreprise. L'objectif &eacute;tait &agrave; la fois de renforcer sa pr&eacute;sence en ligne et d'am&eacute;liorer l'organisation interne gr&acirc;ce &agrave; une application web adapt&eacute;e &agrave; ses besoins concrets.</p>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Missions r&eacute;alis&eacute;es</p>
+                <ul class="content-list">
+                  <li>Cr&eacute;ation d'un site web vitrine en HTML, CSS et JavaScript</li>
+                  <li>Mise en ligne du site via Netlify</li>
+                  <li>D&eacute;veloppement d'une application web avec Laravel</li>
+                  <li>Cr&eacute;ation de modules pour les chantiers, le stockage, les &eacute;quipes, l'agenda et les fiches d'heures</li>
+                  <li>Mise en place de l'authentification et de la gestion des r&ocirc;les</li>
+                  <li>D&eacute;ploiement de l'application sur un h&eacute;bergeur o2switch</li>
+                  <li>Configuration de la base de donn&eacute;es et r&eacute;solution de probl&egrave;mes techniques</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Comp&eacute;tences techniques</p>
+                <ul class="content-list">
+                  <li>D&eacute;veloppement web en HTML, CSS, JavaScript et PHP</li>
+                  <li>Utilisation du framework Laravel</li>
+                  <li>Gestion de base de donn&eacute;es MySQL</li>
+                  <li>D&eacute;ploiement d'une application web avec FTP et cPanel</li>
+                  <li>Gestion des routes, des contr&ocirc;leurs et de l'architecture MVC</li>
+                  <li>S&eacute;curisation avec authentification, gestion des r&ocirc;les et sessions</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Comp&eacute;tences transversales</p>
+                <ul class="content-list">
+                  <li>Autonomie dans la recherche de solutions</li>
+                  <li>Capacit&eacute; d'adaptation face aux probl&egrave;mes techniques</li>
+                  <li>Organisation du travail</li>
+                  <li>Compr&eacute;hension des besoins d'un client professionnel</li>
+                  <li>Communication et &eacute;change avec le chef d'entreprise</li>
+                </ul>
+              </section>
+              <section class="content-card content-card-compact">
+                <p class="card-index">Bilan personnel</p>
+                <p>Ce stage m'a permis de d&eacute;velopper mes comp&eacute;tences techniques tout en d&eacute;couvrant davantage les exigences du monde professionnel. J'ai gagn&eacute; en autonomie, en rigueur et en capacit&eacute; &agrave; r&eacute;soudre des probl&egrave;mes concrets. Cette exp&eacute;rience a confirm&eacute; mon int&eacute;r&ecirc;t pour le d&eacute;veloppement web et m'a aid&eacute;e &agrave; mieux me projeter dans mon futur professionnel.</p>
               </section>
             </div>
           </div>
         </article>
 
-        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Ann&eacute;e suivante">
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Stage suivant">
           &#8250;
         </button>
       </div>
 
       <div class="stage-selector__pagination" id="stagePagination">
-        <button class="is-active" type="button" aria-label="Voir le stage 2024"></button>
-        <button type="button" aria-label="Voir le stage 2025"></button>
-        <button type="button" aria-label="Voir le stage 2026"></button>
+        <button class="is-active" type="button" aria-label="Voir le stage AgroBio"></button>
+        <button type="button" aria-label="Voir le stage Colinon Alexis SARL"></button>
+        <button type="button" aria-label="Voir le stage EURL Szlazak"></button>
       </div>
     </section>
   </main>
-  <script src="pages.js"></script>
+  <script src="assets/js/pages.js"></script>
 </body>
 </html>
