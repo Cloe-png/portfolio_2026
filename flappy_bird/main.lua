@@ -21,6 +21,12 @@ difficultyMode = "normal"
 
 -- Joueur
 bird = {}
+birdSprite = nil
+birdSpriteFrames = {}
+birdSpriteFrameIndex = 1
+birdSpriteFrameTimer = 0
+birdSpriteFrameDuration = 0.11
+backgroundSprites = {}
 
 -- Objets du jeu
 pipes = {}
@@ -88,9 +94,10 @@ birdSkins = {
 }
 
 backgroundSkins = {
-    { name = "Ville", cost = 0 },
-    { name = "Forêt", cost = 25 },
-    { name = "Espace", cost = 45 }
+    { name = "Flappy Bird", cost = 0, file = "assets/background/flappy_bird.jpg" },
+    { name = "Forêt", cost = 25, file = "assets/background/forest.jpg" },
+    { name = "Maison", cost = 45, file = "assets/background/house.jpg" },
+    { name = "Mario", cost = 65, file = "assets/background/mario.jpg" }
 }
 
 pipeSkins = {
@@ -235,8 +242,8 @@ end
 function resetBird()
     bird.x = WINDOW_WIDTH * 0.18
     bird.y = WINDOW_HEIGHT * 0.40
-    bird.width = 36
-    bird.height = 28
+    bird.width = 74
+    bird.height = 62
     bird.speedY = 0
 end
 
@@ -544,6 +551,43 @@ function love.load()
     fontTitle = love.graphics.newFont(42)
     fontScore = love.graphics.newFont(48)
 
+    -- Sprite sheet personnalisé de l'oiseau principal.
+    if love.filesystem.getInfo("assets/birds/bird1.png") then
+        local ok, imageData = pcall(love.image.newImageData, "assets/birds/bird1.png")
+        if ok then
+            -- Remplace le fond noir par de la transparence.
+            imageData:mapPixel(function(x, y, r, g, b, a)
+                if r < 0.05 and g < 0.05 and b < 0.05 then
+                    return r, g, b, 0
+                end
+
+                return r, g, b, a
+            end)
+
+            birdSprite = love.graphics.newImage(imageData)
+            birdSprite:setFilter("nearest", "nearest")
+
+            local frameWidth = math.floor(birdSprite:getWidth() / 2)
+            local frameHeight = math.floor(birdSprite:getHeight() / 2)
+
+            birdSpriteFrames = {
+                love.graphics.newQuad(0, 0, frameWidth, frameHeight, birdSprite:getDimensions()),
+                love.graphics.newQuad(frameWidth, 0, frameWidth, frameHeight, birdSprite:getDimensions()),
+                love.graphics.newQuad(0, frameHeight, frameWidth, frameHeight, birdSprite:getDimensions())
+            }
+        end
+    end
+
+    for index, background in ipairs(backgroundSkins) do
+        if background.file and love.filesystem.getInfo(background.file) then
+            local ok, image = pcall(love.graphics.newImage, background.file)
+            if ok then
+                image:setFilter("linear", "linear")
+                backgroundSprites[index] = image
+            end
+        end
+    end
+
     -- Petites etoiles pour le decor espace
     for i = 1, 70 do
         local star = {}
@@ -708,6 +752,15 @@ end
 -- -------------------------------------------------------------------
 
 function love.update(dt)
+    if birdSprite ~= nil and #birdSpriteFrames > 1 then
+        birdSpriteFrameTimer = birdSpriteFrameTimer + dt
+
+        if birdSpriteFrameTimer >= birdSpriteFrameDuration then
+            birdSpriteFrameTimer = birdSpriteFrameTimer - birdSpriteFrameDuration
+            birdSpriteFrameIndex = (birdSpriteFrameIndex % #birdSpriteFrames) + 1
+        end
+    end
+
     if selectedBackground ~= 3 then
         for i = 1, #clouds do
             local cloud = clouds[i]
@@ -758,6 +811,24 @@ end
 function drawBirdPreview(index, x, y)
     local skin = birdSkins[index]
 
+    if index == 1 and birdSprite ~= nil then
+        local previewQuad = birdSpriteFrames[1]
+        local frameWidth = math.floor(birdSprite:getWidth() / 2)
+        local frameHeight = math.floor(birdSprite:getHeight() / 2)
+        local scaleX = 44 / frameWidth
+        local scaleY = 32 / frameHeight
+
+        love.graphics.setColor(0, 0, 0, 0.95)
+        love.graphics.draw(birdSprite, previewQuad, x - 1, y, 0, scaleX, scaleY)
+        love.graphics.draw(birdSprite, previewQuad, x + 1, y, 0, scaleX, scaleY)
+        love.graphics.draw(birdSprite, previewQuad, x, y - 1, 0, scaleX, scaleY)
+        love.graphics.draw(birdSprite, previewQuad, x, y + 1, 0, scaleX, scaleY)
+
+        love.graphics.setColor(1, 1, 1)
+        love.graphics.draw(birdSprite, previewQuad, x, y, 0, scaleX, scaleY)
+        return
+    end
+
     love.graphics.setColor(skin.body[1], skin.body[2], skin.body[3])
     love.graphics.rectangle("fill", x, y, 44, 32)
 
@@ -775,34 +846,16 @@ function drawBirdPreview(index, x, y)
 end
 
 function drawBackgroundPreview(index, x, y, w, h)
-    if index == 1 then
-        love.graphics.setColor(0.45, 0.76, 1)
-        love.graphics.rectangle("fill", x, y, w, h)
-        love.graphics.setColor(1, 0.9, 0.3)
-        love.graphics.circle("fill", x + w - 16, y + 16, 8)
-        love.graphics.setColor(0.65, 0.72, 0.82)
-        love.graphics.rectangle("fill", x + 10, y + 28, 14, 24)
-        love.graphics.rectangle("fill", x + 30, y + 20, 16, 32)
-        love.graphics.rectangle("fill", x + 52, y + 14, 12, 38)
-    elseif index == 2 then
-        love.graphics.setColor(0.48, 0.82, 0.55)
-        love.graphics.rectangle("fill", x, y, w, h)
-        love.graphics.setColor(0.42, 0.22, 0.08)
-        love.graphics.rectangle("fill", x + 15, y + 25, 8, 27)
-        love.graphics.rectangle("fill", x + 44, y + 27, 8, 25)
-        love.graphics.setColor(0.12, 0.55, 0.16)
-        love.graphics.rectangle("fill", x + 6, y + 12, 24, 18)
-        love.graphics.rectangle("fill", x + 35, y + 14, 24, 18)
-    else
-        love.graphics.setColor(0.03, 0.03, 0.08)
-        love.graphics.rectangle("fill", x, y, w, h)
+    local image = backgroundSprites[index]
+
+    if image ~= nil then
         love.graphics.setColor(1, 1, 1)
-        for i = 1, 10 do
-            love.graphics.points(x + love.math.random(4, w - 4), y + love.math.random(4, h - 4))
-        end
-        love.graphics.setColor(0.6, 0.2, 1)
-        love.graphics.circle("line", x + 48, y + 18, 9)
+        love.graphics.draw(image, x, y, 0, w / image:getWidth(), h / image:getHeight())
+        return
     end
+
+    love.graphics.setColor(0.45, 0.76, 1)
+    love.graphics.rectangle("fill", x, y, w, h)
 end
 
 function drawPipePreview(index, x, y)
@@ -1366,59 +1419,14 @@ end
 
 function drawBackground()
     local background = backgroundSkins[selectedBackground]
+    local image = backgroundSprites[selectedBackground]
 
-    if selectedBackground == 1 then
+    if image ~= nil then
         love.graphics.clear(0.42, 0.75, 0.98)
-        love.graphics.setColor(0.78, 0.90, 1.00)
-        love.graphics.rectangle("fill", 0, 0, WINDOW_WIDTH, GROUND_Y * 0.52)
-        love.graphics.setColor(1.00, 0.91, 0.38)
-        love.graphics.circle("fill", 920, 110, 44)
-
-        love.graphics.setColor(1, 1, 1, 0.72)
-        for i = 1, #clouds do
-            local cloud = clouds[i]
-            love.graphics.ellipse("fill", cloud.x, cloud.y, cloud.w * 0.30, cloud.h * 0.52)
-            love.graphics.ellipse("fill", cloud.x + cloud.w * 0.22, cloud.y - 8, cloud.w * 0.26, cloud.h * 0.46)
-            love.graphics.ellipse("fill", cloud.x + cloud.w * 0.42, cloud.y, cloud.w * 0.28, cloud.h * 0.50)
-        end
-
-        for i = 0, 8 do
-            local x = i * 140
-            love.graphics.setColor(0.73, 0.79, 0.88, 0.65)
-            love.graphics.rectangle("fill", x, 280 + (i % 2) * 24, 78, 170)
-            love.graphics.setColor(0.55, 0.64, 0.76, 0.80)
-            love.graphics.rectangle("fill", x + 16, 250 + (i % 3) * 16, 54, 200)
-        end
-    elseif selectedBackground == 2 then
-        love.graphics.clear(0.42, 0.77, 0.50)
-        love.graphics.setColor(0.70, 0.90, 0.62)
-        love.graphics.rectangle("fill", 0, 0, WINDOW_WIDTH, GROUND_Y * 0.48)
-
-        for i = 0, 11 do
-            local x = i * 92
-            love.graphics.setColor(0.22, 0.48, 0.10, 0.25)
-            love.graphics.circle("fill", x + 40, 360, 84)
-            love.graphics.setColor(0.42, 0.22, 0.08)
-            love.graphics.rectangle("fill", x + 18, 310, 22, 140)
-            love.graphics.setColor(0.12, 0.55, 0.16)
-            love.graphics.circle("fill", x + 8, 286, 28)
-            love.graphics.circle("fill", x + 34, 264, 30)
-            love.graphics.circle("fill", x + 56, 288, 26)
-        end
-    else
-        love.graphics.clear(0.03, 0.03, 0.08)
-        love.graphics.setColor(0.10, 0.08, 0.18)
-        love.graphics.circle("fill", 960, 120, 110)
-        love.graphics.circle("fill", 210, 90, 70)
         love.graphics.setColor(1, 1, 1)
-        for i = 1, #stars do
-            local star = stars[i]
-            love.graphics.points(star.x, star.y)
-        end
-
-        love.graphics.setColor(0.62, 0.24, 1.00)
-        love.graphics.circle("line", 720, 110, 46)
-        love.graphics.circle("line", 180, 80, 28)
+        love.graphics.draw(image, 0, 0, 0, WINDOW_WIDTH / image:getWidth(), GROUND_Y / image:getHeight())
+    else
+        love.graphics.clear(0.42, 0.75, 0.98)
     end
 
     love.graphics.setColor(0, 0, 0, 0.08)
@@ -1454,6 +1462,65 @@ function drawBird()
 
     love.graphics.setColor(0, 0, 0, 0.16)
     love.graphics.ellipse("fill", 2, bird.height / 2 + 8, 18, 8)
+
+    if selectedBird == 1 and birdSprite ~= nil then
+        local activeQuad = birdSpriteFrames[birdSpriteFrameIndex] or birdSpriteFrames[1]
+        local frameWidth = math.floor(birdSprite:getWidth() / 2)
+        local frameHeight = math.floor(birdSprite:getHeight() / 2)
+        local scaleX = bird.width / frameWidth
+        local scaleY = bird.height / frameHeight
+
+        love.graphics.setColor(0, 0, 0, 0.95)
+        love.graphics.draw(
+            birdSprite,
+            activeQuad,
+            -bird.width / 2 - 2,
+            -bird.height / 2,
+            0,
+            scaleX,
+            scaleY
+        )
+        love.graphics.draw(
+            birdSprite,
+            activeQuad,
+            -bird.width / 2 + 2,
+            -bird.height / 2,
+            0,
+            scaleX,
+            scaleY
+        )
+        love.graphics.draw(
+            birdSprite,
+            activeQuad,
+            -bird.width / 2,
+            -bird.height / 2 - 2,
+            0,
+            scaleX,
+            scaleY
+        )
+        love.graphics.draw(
+            birdSprite,
+            activeQuad,
+            -bird.width / 2,
+            -bird.height / 2 + 2,
+            0,
+            scaleX,
+            scaleY
+        )
+
+        love.graphics.setColor(1, 1, 1)
+        love.graphics.draw(
+            birdSprite,
+            activeQuad,
+            -bird.width / 2,
+            -bird.height / 2,
+            0,
+            scaleX,
+            scaleY
+        )
+        love.graphics.pop()
+        return
+    end
 
     love.graphics.setColor(skin.body[1], skin.body[2], skin.body[3])
     love.graphics.ellipse("fill", 0, 0, 20, 15)
@@ -1634,3 +1701,4 @@ function love.draw()
         drawGameOver()
     end
 end
+

@@ -69,6 +69,7 @@ function setupStageShowcase() {
   const dots = Array.from(document.querySelectorAll("#stagePagination button"));
   const prevButton = document.querySelector("#prevStage");
   const nextButton = document.querySelector("#nextStage");
+  const counter = document.querySelector("#stageCounter");
 
   if (!showcase || !selector || !slides.length) {
     return;
@@ -104,6 +105,11 @@ function setupStageShowcase() {
     });
 
     showcase.dataset.stageTheme = slides[activeIndex].dataset.stageTheme || "orange";
+
+    if (counter) {
+      counter.textContent = `Slide ${activeIndex + 1} / ${slides.length}`;
+    }
+
     syncSelectorHeight();
   };
 

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/pages.css?v=12">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
 </head>
 <body class="stage-page stage-page-flappy">
   <div class="page-bg page-bg-cyan" aria-hidden="true"></div>
@@ -35,243 +35,266 @@
       </nav>
     </header>
 
-    <section class="stage-showcase reveal" data-stage-theme="cyan">
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="cyan">
       <div class="stage-selector stage-selector-clean">
         <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Sujet pr&eacute;c&eacute;dent">
           &#8249;
         </button>
 
         <article class="stage-slide stage-slide-clean stage-slide-flappy is-active" data-stage-theme="cyan">
-          <div class="stage-clean-hero">
-            <div class="stage-clean-main">
-              <p class="stage-clean-label">Veille 01</p>
-              <h2>Lua</h2>
-              <p class="stage-clean-subtitle">Un langage simple, l&eacute;ger et lisible</p>
-              <p class="stage-clean-text">Une premi&egrave;re partie de veille centr&eacute;e sur la d&eacute;couverte du langage Lua, sa syntaxe, sa simplicit&eacute; et son int&eacute;r&ecirc;t pour apprendre la logique de programmation.</p>
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 01</p>
             </div>
-
-            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
-              <div class="flappy-scene flappy-scene-lua">
-                <span class="flappy-sun"></span>
-                <span class="flappy-cloud flappy-cloud-a"></span>
-                <span class="flappy-cloud flappy-cloud-b"></span>
-                <span class="flappy-pipe flappy-pipe-left"></span>
-                <span class="flappy-pipe flappy-pipe-right"></span>
-                <span class="flappy-bird-mark"></span>
-                <span class="flappy-badge-label">LUA</span>
+            <div class="skills-ppt-cover">
+              <p class="skills-ppt-cover__eyebrow">BTS SIO</p>
+              <h1>VEILLE TECHNOLOGIQUE<br>LUA</h1>
+              <p class="skills-ppt-cover__subtitle">Du scripting Roblox &agrave; un mini-jeu Flappy Bird con&ccedil;u avec LOVE2D et mes propres assets.</p>
+              <div class="skills-ppt-cover__meta">
+                <span>Pr&eacute;sentation type PowerPoint</span>
+                <span id="stageCounter" aria-live="polite">Slide 1 / 9</span>
               </div>
-            </div>
-
-            <div class="stage-clean-side">
-              <span>Langage l&eacute;ger</span>
-              <span>Syntaxe claire</span>
-              <span>Premier envol</span>
-            </div>
-          </div>
-
-          <div class="stage-panel stage-panel-clean">
-            <div class="stage-panel__header">
-              <div>
-                <p class="card-index">Axe 01</p>
-                <h3>Lua : un langage adapt&eacute; &agrave; l'apprentissage, au prototypage et aux petits projets</h3>
-              </div>
-              <a class="stage-panel__button" href="https://www.lua.org/" target="_blank" rel="noopener noreferrer">Voir le site officiel</a>
-            </div>
-
-            <div class="stage-panel__meta">
-              <span>Sujet : d&eacute;couverte du langage Lua</span>
-              <span>Points observ&eacute;s : syntaxe, structure, simplicit&eacute;, lisibilit&eacute;</span>
-              <span>Int&eacute;r&ecirc;t : apprendre la logique sans lourdeur syntaxique</span>
-            </div>
-
-            <div class="stage-panel__grid">
-              <section class="content-card content-card-compact">
-                <p class="card-index">D&eacute;finition</p>
-                <p>Lua est un langage de programmation con&ccedil;u pour &ecirc;tre l&eacute;ger, rapide et simple &agrave; int&eacute;grer dans d'autres projets. Il est souvent utilis&eacute; pour les scripts, les outils et le jeu vid&eacute;o.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Pourquoi ce choix</p>
-                <p>J'ai choisi Lua pour ma veille car c'est un langage diff&eacute;rent de ceux vus le plus souvent en cours, tout en restant accessible pour une d&eacute;couverte concr&egrave;te.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Points forts</p>
-                <ul class="content-list">
-                  <li>Syntaxe courte et lisible</li>
-                  <li>Facile &agrave; comprendre pour un d&eacute;butant</li>
-                  <li>Rapide &agrave; tester sur de petits projets</li>
-                  <li>Utilis&eacute; dans plusieurs moteurs et outils</li>
-                </ul>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Ce que j'ai observ&eacute;</p>
-                <p>Lua permet de se concentrer sur la logique du programme. On passe moins de temps sur la forme du code et davantage sur le fonctionnement r&eacute;el de ce qu'on construit.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Comparaison</p>
-                <p>Par rapport &agrave; d'autres langages plus verbeux, Lua donne une impression de simplicit&eacute; qui peut &ecirc;tre tr&egrave;s utile pour prototyper une id&eacute;e rapidement.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Bilan</p>
-                <p>Cette premi&egrave;re partie de veille m'a permis de comprendre que Lua est une bonne porte d'entr&eacute;e pour travailler la logique, les structures de base et les petits programmes interactifs.</p>
-              </section>
             </div>
           </div>
         </article>
 
         <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
-          <div class="stage-clean-hero">
-            <div class="stage-clean-main">
-              <p class="stage-clean-label">Veille 02</p>
-              <h2>LOVE2D</h2>
-              <p class="stage-clean-subtitle">Un framework pens&eacute; pour les jeux 2D en Lua</p>
-              <p class="stage-clean-text">Une deuxi&egrave;me partie de veille consacr&eacute;e &agrave; LOVE2D, afin de comprendre comment un framework peut fournir la fen&ecirc;tre, le rendu, les entr&eacute;es clavier et la boucle de jeu.</p>
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 02</p>
             </div>
-
-            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
-              <div class="flappy-scene flappy-scene-love">
-                <span class="flappy-sun"></span>
-                <span class="flappy-cloud flappy-cloud-a"></span>
-                <span class="flappy-cloud flappy-cloud-c"></span>
-                <span class="flappy-pipe flappy-pipe-left"></span>
-                <span class="flappy-pipe flappy-pipe-right"></span>
-                <span class="flappy-coin flappy-coin-a"></span>
-                <span class="flappy-coin flappy-coin-b"></span>
-                <span class="flappy-badge-label">LOVE2D</span>
+            <div class="skills-ppt-layout skills-ppt-layout-agenda">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Sommaire</p>
+                <h2>Plan de la pr&eacute;sentation</h2>
+                <ol class="skills-ppt-agenda">
+                  <li>Introduction et contexte du projet</li>
+                  <li>Presentation du langage Lua</li>
+                  <li>Domaines d'utilisation</li>
+                  <li>Analyse technique et evolution</li>
+                  <li>Methodologie de veille</li>
+                  <li>Mise en pratique avec Flappy Bird</li>
+                  <li>Analyse critique et conclusion</li>
+                  <li>Sources</li>
+                </ol>
               </div>
-            </div>
-
-            <div class="stage-clean-side">
-              <span>Framework 2D</span>
-              <span>Boucle de jeu</span>
-              <span>Collision + rendu</span>
+              <div class="skills-ppt-visual skills-ppt-visual-card">
+                <img src="flappy_bird/assets/background/mario.jpg" alt="">
+                <div>
+                  <strong>Fil conducteur</strong>
+                  <p>Comprendre Lua pour l&rsquo;utiliser de mani&egrave;re concr&egrave;te dans mes projets de jeu.</p>
+                </div>
+              </div>
             </div>
           </div>
+        </article>
 
-          <div class="stage-panel stage-panel-clean">
-            <div class="stage-panel__header">
-              <div>
-                <p class="card-index">Axe 02</p>
-                <h3>LOVE2D : un cadre simple pour relier Lua &agrave; un vrai projet de jeu</h3>
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Introduction</p>
+                <h2>Pourquoi avoir choisi Lua ?</h2>
+                <div class="skills-ppt-copy">
+                  <p>Dans le cadre de ma formation en BTS SIO, j&rsquo;ai r&eacute;alis&eacute; une veille technologique portant sur le langage de programmation Lua. Le choix de ce langage n&rsquo;est pas anodin : il s&rsquo;inscrit directement dans un projet personnel de d&eacute;veloppement de jeu vid&eacute;o sur la plateforme Roblox, qui utilise une version adapt&eacute;e de Lua pour le scripting de ses environnements interactifs.</p>
+                  <p>Ainsi, cette veille ne se limite pas &agrave; une simple collecte d&rsquo;informations th&eacute;oriques. Elle s&rsquo;inscrit dans une d&eacute;marche concr&egrave;te, visant &agrave; comprendre un langage dans le but de l&rsquo;utiliser dans un projet r&eacute;el. Pour renforcer cette approche pratique, j&rsquo;ai &eacute;galement d&eacute;velopp&eacute; un jeu inspir&eacute; de Flappy Bird en utilisant le framework L&Ouml;VE (Love2D), tout en cr&eacute;ant moi-m&ecirc;me l&rsquo;ensemble des assets graphiques. Cette double approche, th&eacute;orique et pratique, m&rsquo;a permis d&rsquo;approfondir ma compr&eacute;hension du langage Lua et de ses usages.</p>
+                </div>
               </div>
-              <a class="stage-panel__button stage-panel__button-alt" href="https://love2d.org/" target="_blank" rel="noopener noreferrer">Voir le site officiel</a>
-            </div>
-
-            <div class="stage-panel__meta">
-              <span>Sujet : framework LOVE2D</span>
-              <span>Points observ&eacute;s : fen&ecirc;tre, dessin, clavier, structure du jeu</span>
-              <span>Int&eacute;r&ecirc;t : passer d'un langage &agrave; une application concr&egrave;te</span>
-            </div>
-
-            <div class="stage-panel__grid">
-              <section class="content-card content-card-compact">
-                <p class="card-index">R&ocirc;le du framework</p>
-                <p>LOVE2D prend en charge les aspects techniques de base d'un jeu : ouverture de la fen&ecirc;tre, affichage, son, gestion du temps et entr&eacute;es clavier/souris.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Pourquoi c'est utile</p>
-                <p>Au lieu de tout construire soi-m&ecirc;me, le framework offre une base pr&ecirc;te &agrave; utiliser. Cela permet de consacrer davantage de temps &agrave; la logique du jeu et &agrave; l'exp&eacute;rimentation.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Fonctions importantes</p>
-                <ul class="content-list">
-                  <li><code>love.load</code> pour initialiser</li>
-                  <li><code>love.update</code> pour mettre &agrave; jour</li>
-                  <li><code>love.draw</code> pour afficher</li>
-                  <li><code>love.keypressed</code> pour g&eacute;rer les touches</li>
-                </ul>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Ce que j'ai compris</p>
-                <p>LOVE2D propose une structure simple &agrave; suivre, ce qui aide &agrave; comprendre le cycle de vie d'un jeu sans se perdre dans une architecture trop complexe.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Lien avec ma veille</p>
-                <p>Ce framework m'a permis de transformer une recherche sur Lua en un projet jouable, ce qui rend la veille plus concr&egrave;te et plus facile &agrave; expliquer.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Bilan</p>
-                <p>LOVE2D est un outil coh&eacute;rent pour d&eacute;buter en jeu 2D avec Lua. Il aide &agrave; comprendre comment un programme interactif est organis&eacute; tout en restant abordable.</p>
-              </section>
+              <div class="skills-ppt-visual skills-ppt-visual-media">
+                <img src="flappy_bird/assets/background/forest.jpg" alt="">
+                <img class="skills-ppt-visual__bird" src="flappy_bird/assets/birds/bird1.png" alt="">
+              </div>
             </div>
           </div>
         </article>
 
         <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="violet">
-          <div class="stage-clean-hero">
-            <div class="stage-clean-main">
-              <p class="stage-clean-label">Veille 03</p>
-              <h2>Flappy Bird</h2>
-              <p class="stage-clean-subtitle">Une application concr&egrave;te pour valider la veille</p>
-              <p class="stage-clean-text">La troisi&egrave;me partie relie la veille &agrave; un mini-projet concret : un Flappy Bird cod&eacute; en Lua avec LOVE2D pour mettre en pratique les notions observ&eacute;es.</p>
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 04</p>
             </div>
-
-            <div class="stage-clean-badge stage-clean-badge-flappy" aria-hidden="true">
-              <div class="flappy-scene flappy-scene-project">
-                <span class="flappy-sun"></span>
-                <span class="flappy-cloud flappy-cloud-b"></span>
-                <span class="flappy-cloud flappy-cloud-c"></span>
-                <span class="flappy-pipe flappy-pipe-left"></span>
-                <span class="flappy-pipe flappy-pipe-right"></span>
-                <span class="flappy-coin flappy-coin-a"></span>
-                <span class="flappy-coin flappy-coin-c"></span>
-                <span class="flappy-bird-mark flappy-bird-mark-player"></span>
-                <span class="flappy-badge-label">PLAY</span>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Pr&eacute;sentation du langage</p>
+                <h2>Lua en quelques points cl&eacute;s</h2>
+                <div class="skills-ppt-copy">
+                  <p>Le langage Lua a &eacute;t&eacute; cr&eacute;&eacute; en 1993 par des chercheurs de la PUC-Rio, au Br&eacute;sil. Son nom signifie &laquo; lune &raquo; en portugais, ce qui refl&egrave;te une volont&eacute; de simplicit&eacute; et d&rsquo;&eacute;l&eacute;gance dans sa conception.</p>
+                  <p>Lua est un langage interpr&eacute;t&eacute;, l&eacute;ger et portable, con&ccedil;u &agrave; l&rsquo;origine pour &ecirc;tre int&eacute;gr&eacute; dans d&rsquo;autres programmes. Contrairement &agrave; des langages plus g&eacute;n&eacute;ralistes, il est rarement utilis&eacute; seul pour d&eacute;velopper des applications compl&egrave;tes. Il est plut&ocirc;t con&ccedil;u comme un langage embarqu&eacute;, permettant d&rsquo;ajouter des fonctionnalit&eacute;s dynamiques &agrave; un logiciel principal. Sa syntaxe est volontairement simple, ce qui le rend accessible, tout en restant suffisamment puissant pour g&eacute;rer des syst&egrave;mes complexes.</p>
+                  <p>Une des particularit&eacute;s de Lua est son syst&egrave;me bas&eacute; sur les tables, qui permet de simuler diff&eacute;rents paradigmes de programmation, notamment l&rsquo;orient&eacute; objet. Cette flexibilit&eacute; en fait un langage polyvalent malgr&eacute; sa taille r&eacute;duite.</p>
+                </div>
               </div>
-            </div>
-
-            <div class="stage-clean-side">
-              <span>Projet concret</span>
-              <span>Lua + LOVE2D</span>
-              <span>D&eacute;mo jouable</span>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Atouts</strong>
+                  <p>Simplicit&eacute;, lisibilit&eacute;, rapidit&eacute; et faible consommation de ressources.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Positionnement</strong>
+                  <p>Lua est surtout pens&eacute; comme langage embarqu&eacute; plut&ocirc;t que pour des applications compl&egrave;tes.</p>
+                </section>
+              </div>
             </div>
           </div>
+        </article>
 
-          <div class="stage-panel stage-panel-clean">
-            <div class="stage-panel__header">
-              <div>
-                <p class="card-index">Axe 03</p>
-                <h3>Un Flappy Bird pour transformer la veille technologique en vraie exp&eacute;rimentation</h3>
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 05</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Usages et analyse</p>
+                <h2>O&ugrave; retrouve-t-on Lua aujourd&rsquo;hui ?</h2>
+                <div class="skills-ppt-copy">
+                  <p>Lua est principalement utilis&eacute; dans des domaines o&ugrave; la performance et la l&eacute;g&egrave;ret&eacute; sont essentielles. Le secteur du jeu vid&eacute;o constitue l&rsquo;un de ses principaux champs d&rsquo;application. Par exemple, la plateforme Roblox repose enti&egrave;rement sur Lua pour permettre aux utilisateurs de cr&eacute;er leurs propres jeux et exp&eacute;riences interactives. De la gestion des interactions &agrave; la logique multijoueur, Lua est au c&oelig;ur du fonctionnement de nombreux projets d&eacute;velopp&eacute;s sur cette plateforme.</p>
+                  <p>D&rsquo;autres jeux connus comme World of Warcraft ou Garry&rsquo;s Mod utilisent &eacute;galement Lua pour g&eacute;rer certains aspects du gameplay ou de l&rsquo;interface utilisateur. Cela montre que Lua est particuli&egrave;rement adapt&eacute; aux syst&egrave;mes n&eacute;cessitant de la flexibilit&eacute; et des modifications rapides.</p>
+                  <p>En dehors du jeu vid&eacute;o, Lua est aussi utilis&eacute; dans des logiciels comme Wireshark pour l&rsquo;analyse r&eacute;seau, ou Adobe Lightroom pour le d&eacute;veloppement de plugins. Il est &eacute;galement pr&eacute;sent dans les syst&egrave;mes embarqu&eacute;s, notamment dans les objets connect&eacute;s, gr&acirc;ce &agrave; sa faible consommation de ressources.</p>
+                </div>
               </div>
-              <a class="stage-panel__button" href="flappy_bird/README.md" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Cas d'usage</strong>
+                  <p>Jeux vid&eacute;o, scripts d&rsquo;interface, outils d&rsquo;analyse r&eacute;seau, plugins et syst&egrave;mes embarqu&eacute;s.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Int&eacute;r&ecirc;t</strong>
+                  <p>Lua est pertinent lorsque la flexibilit&eacute;, la rapidit&eacute; d&rsquo;int&eacute;gration et la l&eacute;g&egrave;ret&eacute; sont recherch&eacute;es.</p>
+                </section>
+              </div>
             </div>
+          </div>
+        </article>
 
-            <div class="stage-panel__meta">
-              <span>Projet : Flappy Bird en Lua</span>
-              <span>Objectif : mettre en pratique la veille</span>
-              <span>D&eacute;monstration : pr&eacute;vue en local pendant l'oral</span>
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 06</p>
             </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Analyse technique et &eacute;volution</p>
+                <h2>Forces, limites et tendances</h2>
+                <div class="skills-ppt-copy">
+                  <p>D&rsquo;un point de vue technique, Lua pr&eacute;sente plusieurs avantages significatifs. Sa l&eacute;g&egrave;ret&eacute; en fait un langage extr&ecirc;mement rapide, souvent utilis&eacute; dans des contextes o&ugrave; les performances sont critiques. De plus, sa syntaxe simple permet une prise en main rapide, ce qui est particuli&egrave;rement int&eacute;ressant pour les d&eacute;veloppeurs d&eacute;butants ou pour des projets n&eacute;cessitant une impl&eacute;mentation rapide.</p>
+                  <p>Lua est &eacute;galement con&ccedil;u pour &ecirc;tre facilement interfa&ccedil;able avec des langages comme le C ou le C++, ce qui permet de combiner performance et flexibilit&eacute;. Cette caract&eacute;ristique est essentielle dans le d&eacute;veloppement de moteurs de jeux ou de logiciels complexes.</p>
+                  <p>Cependant, Lua pr&eacute;sente aussi certaines limites. Sa popularit&eacute; est moindre compar&eacute;e &agrave; des langages comme Python ou JavaScript, ce qui implique une communaut&eacute; plus restreinte et moins de ressources disponibles. De plus, il dispose de peu de frameworks modernes, ce qui peut compliquer le d&eacute;veloppement de projets de grande envergure.</p>
+                  <p>Depuis sa cr&eacute;ation, Lua a connu plusieurs &eacute;volutions, notamment avec les versions 5.x qui constituent aujourd&rsquo;hui les versions stables du langage. Une version particuli&egrave;re, appel&eacute;e LuaJIT, permet d&rsquo;am&eacute;liorer consid&eacute;rablement les performances gr&acirc;ce &agrave; une compilation Just-In-Time, rapprochant ainsi Lua des performances du langage C.</p>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Tendance actuelle</strong>
+                  <p>Actuellement, Lua conna&icirc;t un regain d&rsquo;int&eacute;r&ecirc;t gr&acirc;ce &agrave; des plateformes comme Roblox, qui d&eacute;mocratisent son utilisation.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Rep&egrave;re officiel</strong>
+                  <p>Selon lua.org, Lua 5.5.0 est sortie le 22 d&eacute;cembre 2025 et Lua 5.4.8 le 4 juin 2025.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-            <div class="stage-panel__grid">
-              <section class="content-card content-card-compact">
-                <p class="card-index">Principe</p>
-                <p>Le projet reprend le principe d'un Flappy Bird avec un oiseau, des tuyaux, un score, des vies, une difficult&eacute; progressive et une petite personnalisation visuelle.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Objectif p&eacute;dagogique</p>
-                <p>L'id&eacute;e n'&eacute;tait pas seulement de faire un jeu, mais surtout de comprendre comment Lua et LOVE2D peuvent &ecirc;tre utilis&eacute;s ensemble dans un projet complet mais accessible.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Notions mises en pratique</p>
-                <ul class="content-list">
-                  <li>Boucle de jeu</li>
-                  <li>Gestion du clavier</li>
-                  <li>Collisions</li>
-                  <li>Score et sauvegarde</li>
-                  <li>Organisation d'un fichier de jeu</li>
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="violet">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 07</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">M&eacute;thodologie de veille</p>
+                <h2>Comment ai-je r&eacute;alis&eacute; cette veille ?</h2>
+                <div class="skills-ppt-copy">
+                  <p>Pour r&eacute;aliser cette veille technologique, j&rsquo;ai mobilis&eacute; diff&eacute;rentes sources d&rsquo;information. J&rsquo;ai consult&eacute; la documentation officielle du langage, des forums sp&eacute;cialis&eacute;s, ainsi que des plateformes comme GitHub et Stack Overflow. Ces sources m&rsquo;ont permis de suivre l&rsquo;&eacute;volution du langage, d&rsquo;identifier ses usages actuels et de comprendre les probl&eacute;matiques rencontr&eacute;es par les d&eacute;veloppeurs.</p>
+                  <p>J&rsquo;ai &eacute;galement utilis&eacute; des outils de veille comme Google Alerts afin de rester inform&eacute; des actualit&eacute;s li&eacute;es &agrave; Lua. Enfin, des vid&eacute;os et tutoriels en ligne m&rsquo;ont aid&eacute; &agrave; approfondir mes connaissances de mani&egrave;re pratique.</p>
+                </div>
+              </div>
+              <div class="skills-ppt-visual skills-ppt-visual-media">
+                <img src="flappy_bird/assets/background/house.jpg" alt="">
+                <img class="skills-ppt-visual__bird" src="flappy_bird/assets/birds/bird1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 08</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Mise en pratique et conclusion</p>
+                <h2>De la th&eacute;orie &agrave; l'exp&eacute;rimentation</h2>
+                <div class="skills-ppt-copy">
+                  <p>Afin de compl&eacute;ter cette veille, j&rsquo;ai d&eacute;velopp&eacute; un jeu inspir&eacute; de Flappy Bird en utilisant le framework L&Ouml;VE. Ce projet m&rsquo;a permis de mettre en pratique les concepts &eacute;tudi&eacute;s et de mieux comprendre le fonctionnement de Lua dans un contexte r&eacute;el.</p>
+                  <p>J&rsquo;ai notamment impl&eacute;ment&eacute; des m&eacute;canismes tels que la gestion de la gravit&eacute;, des collisions, du score et des animations. De plus, j&rsquo;ai con&ccedil;u moi-m&ecirc;me les assets graphiques du jeu, ce qui m&rsquo;a permis de travailler &agrave; la fois sur l&rsquo;aspect technique et cr&eacute;atif du projet.</p>
+                  <p>Cette exp&eacute;rience a &eacute;t&eacute; particuli&egrave;rement enrichissante, car elle m&rsquo;a permis de passer de la th&eacute;orie &agrave; la pratique, tout en consolidant mes comp&eacute;tences en d&eacute;veloppement.</p>
+                  <p>Cette veille technologique m&rsquo;a permis de constater que Lua est un langage &agrave; la fois simple et puissant. Il est particuli&egrave;rement adapt&eacute; aux projets de petite &agrave; moyenne envergure, ainsi qu&rsquo;aux syst&egrave;mes embarqu&eacute;s et au d&eacute;veloppement de jeux vid&eacute;o.</p>
+                  <p>En conclusion, le langage Lua constitue un choix pertinent dans le cadre de mon projet de d&eacute;veloppement sur Roblox. Cette veille technologique m&rsquo;a permis d&rsquo;acqu&eacute;rir une compr&eacute;hension approfondie de ce langage et de ses applications.</p>
+                </div>
+                <div class="skills-ppt-actions">
+                  <a class="skills-ppt-cta" href="https://github.com/Cloe-png/flappy_bird" target="_blank" rel="noopener noreferrer">Voir le d&eacute;p&ocirc;t Git du mini-jeu</a>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Analyse critique</strong>
+                  <p>Cependant, son utilisation reste limit&eacute;e dans certains domaines en raison de son manque de popularit&eacute; et de l&rsquo;absence de certains outils modernes.</p>
+                </section>
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Conclusion orale</strong>
+                  <p>Le d&eacute;veloppement d&rsquo;un jeu avec le framework L&Ouml;VE a renforc&eacute; cette compr&eacute;hension en apportant une dimension concr&egrave;te &agrave; mon apprentissage.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Veille technologique | Slide 09</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Sources</p>
+                <h2>R&eacute;f&eacute;rences utilis&eacute;es</h2>
+                <ul class="skills-ppt-sources">
+                  <li><a href="https://www.lua.org/history.html" target="_blank" rel="noopener noreferrer">Historique officiel de Lua</a></li>
+                  <li><a href="https://www.lua.org/manual/" target="_blank" rel="noopener noreferrer">Manuels de r&eacute;f&eacute;rence officiels de Lua</a></li>
+                  <li><a href="https://www.lua.org/versions.html" target="_blank" rel="noopener noreferrer">Versions et historique des releases de Lua</a></li>
+                  <li><a href="https://luajit.org/" target="_blank" rel="noopener noreferrer">Site officiel de LuaJIT</a></li>
+                  <li><a href="https://create.roblox.com/docs/luau" target="_blank" rel="noopener noreferrer">Documentation officielle Luau / Roblox Creator Hub</a></li>
+                  <li><a href="https://create.roblox.com/docs/scripting" target="_blank" rel="noopener noreferrer">Documentation Roblox sur le scripting</a></li>
+                  <li><a href="https://www.love2d.org/wiki/Getting_Started" target="_blank" rel="noopener noreferrer">Guide officiel Getting Started de L&Ouml;VE</a></li>
+                  <li><a href="https://wiki.wireshark.org/lua" target="_blank" rel="noopener noreferrer">Wireshark Wiki : Lua</a></li>
+                  <li><a href="https://developer.adobe.com/apis/creativecloud/lightroomclassic.html" target="_blank" rel="noopener noreferrer">Adobe Lightroom Classic SDK</a></li>
                 </ul>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Ce que cela montre</p>
-                <p>Ce projet montre qu'une veille technologique peut d&eacute;boucher sur une r&eacute;alisation concr&egrave;te. Cela permet de mieux comprendre les outils en les utilisant vraiment.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Lien avec l'oral</p>
-                <p>Le jury pourra voir que la veille ne se limite pas &agrave; des recherches th&eacute;oriques, mais qu'elle a &eacute;t&eacute; transform&eacute;e en exp&eacute;rimentation personnelle et en mini-projet jouable.</p>
-              </section>
-              <section class="content-card content-card-compact">
-                <p class="card-index">Bilan personnel</p>
-                <p>Cette veille m'a permis de d&eacute;couvrir un langage diff&eacute;rent, de comprendre l'int&eacute;r&ecirc;t d'un framework de jeu et de relier l'apprentissage technique &agrave; une vraie production personnelle.</p>
-              </section>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Outils de veille</strong>
+                  <p>Google Alerts, GitHub, Stack Overflow, documentation officielle et tutoriels en ligne.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Rep&egrave;res dat&eacute;s</strong>
+                  <p>lua.org indique que Lua 5.5.0 est sortie le 22 d&eacute;cembre 2025 et que Lua 5.4.8 est sortie le 4 juin 2025.</p>
+                </section>
+              </div>
             </div>
           </div>
         </article>
@@ -282,12 +305,18 @@
       </div>
 
       <div class="stage-selector__pagination" id="stagePagination">
-        <button class="is-active" type="button" aria-label="Voir la partie Lua"></button>
-        <button type="button" aria-label="Voir la partie LOVE2D"></button>
-        <button type="button" aria-label="Voir la partie Flappy Bird"></button>
+        <button class="is-active" type="button" aria-label="Voir la page de garde"></button>
+        <button type="button" aria-label="Voir le sommaire"></button>
+        <button type="button" aria-label="Voir l'introduction"></button>
+        <button type="button" aria-label="Voir la presentation de Lua"></button>
+        <button type="button" aria-label="Voir les usages de Lua"></button>
+        <button type="button" aria-label="Voir l'analyse technique"></button>
+        <button type="button" aria-label="Voir la methodologie"></button>
+        <button type="button" aria-label="Voir la mise en pratique et la conclusion"></button>
+        <button type="button" aria-label="Voir les sources"></button>
       </div>
     </section>
   </main>
-  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/pages.js?v=2"></script>
 </body>
 </html>
