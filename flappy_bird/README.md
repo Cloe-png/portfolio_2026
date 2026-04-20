@@ -11,7 +11,6 @@ Version simple pour débuter avec `Lua` et `LOVE2D`.
 ```powershell
 cd C:\wamp64\www\Portfolio2\flappy_bird
 "C:\Program Files\LOVE\love.exe" .
-
 ```
 
 ## Commandes
@@ -21,21 +20,24 @@ cd C:\wamp64\www\Portfolio2\flappy_bird
 - `Entrée` : recommencer après un game over
 - `Échap` : revenir au menu
 
-## Contenu
+## Organisation du code
 
-- `main.lua` : tout le jeu dans un seul fichier, avec beaucoup de commentaires
-- `conf.lua` : la fenêtre du jeu
+- `main.lua` : point d'entrée LOVE2D
+- `config.lua` : état global, sauvegarde et logique de jeu
+- `assets.lua` : chargement des images, polices et sprites
+- `controls.lua` : clavier, souris et mise à jour du jeu
+- `screens.lua` : affichage des menus et de la partie
+- `conf.lua` : configuration de la fenêtre
 
-## Ce qu'il y a dans le jeu
+## Contenu du jeu
 
 - un menu principal
-- un mode normal
-- un mode hard
-- 3 vies
+- trois niveaux de difficulté
+- trois vies
 - des pièces à ramasser
-- une boutique simple
+- une boutique
 - des skins pour l'oiseau, le décor et les tuyaux
 - un meilleur score sauvegardé
 - un sol qui défile
 
-Le jeu utilise uniquement des formes dessinées en code, donc aucun asset n'est nécessaire.
+Le jeu utilise les images présentes dans `assets/`.

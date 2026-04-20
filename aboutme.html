@@ -3,213 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Pr&eacute;sentation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-    crossorigin="anonymous"
-  >
+  <title>Portfolio | Présentation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/aboutme.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
 </head>
-<body>
-  <main class="poster-page">
-    <section class="poster-hero reveal">
-      <div class="poster-hero__sky" aria-hidden="true"></div>
-      <div class="poster-hero__illustration" aria-hidden="true"></div>
+<body class="stage-page">
+  <div class="page-bg page-bg-cyan" aria-hidden="true"></div>
+  <main class="content-shell">
+    <header class="content-topbar reveal">
+      <a class="content-brand" href="chapters.html">Cloé Wlodarski-Zminka</a>
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="aboutme-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="content-nav" id="aboutme-nav">
+        <a href="chapters.html">Home</a>
+        <a class="is-active" href="aboutme.html">Présentation</a>
+        <a href="projects.html">Stages</a>
+        <a href="skills.html">Veille techno</a>
+        <a href="projetsperso.html">Projets perso</a>
+        <a href="futur.html">Avenir</a>
+      </nav>
+    </header>
 
-      <header class="chapter-topbar poster-topbar">
-        <a class="chapter-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
-        <button
-          class="mobile-nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="aboutme-nav"
-          aria-label="Ouvrir le menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="cyan">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Slide précédente">
+          &#8249;
         </button>
-        <nav class="chapter-nav" id="aboutme-nav" aria-label="Navigation secondaire">
-          <a href="chapters.html">Home</a>
-          <a class="is-active" href="aboutme.html">Pr&eacute;sentation</a>
-          <a href="projects.html">Stages</a>
-          <a href="skills.html">Veille techno</a>
-          <a href="projetsperso.html">Projets perso</a>
-          <a href="futur.html">Avenir</a>
-        </nav>
-      </header>
 
-      <div class="poster-doodles" aria-hidden="true">
-        <span class="doodle doodle-bird bird-a"></span>
-        <span class="doodle doodle-bird bird-b"></span>
-        <span class="doodle doodle-cloud cloud-a"></span>
-        <span class="doodle doodle-cloud cloud-b"></span>
-        <span class="doodle doodle-sun"></span>
-      </div>
-    </section>
-
-    <section class="about-card reveal">
-      <p class="about-card__eyebrow">Pr&eacute;sentation</p>
-
-      <div class="about-card__intro">
-        <div class="about-card__copy">
-          <div class="about-card__heading">
-            <h2>
-              <span>CLOE</span>
-              <span>WLODARSKI-ZMINKA</span>
-            </h2>
-            <div class="about-card__arrow" aria-hidden="true"></div>
-          </div>
-
-          <p class="about-card__alias">&Eacute;tudiante en BTS SIO - option SLAM<br>Lyc&eacute;e Raymond Poincar&eacute; &agrave; Bar-le-Duc</br></p>
-
-          <p class="about-card__text">
-            Je m'appelle <strong>Clo&eacute; Wlodarski-Zminka</strong> et je suis &eacute;tudiante en BTS SIO
-            au lyc&eacute;e Raymond Poincar&eacute; &agrave; Bar-le-Duc. Passionn&eacute;e par la cr&eacute;ation de sites et
-            d'interfaces, j'aime transformer des id&eacute;es en exp&eacute;riences visuelles claires,
-            dynamiques et bien structur&eacute;es.
-          </p>
-
-          <div class="about-card__contact">
-            <span>Formation : BTS SIO / sp&eacute;cialit&eacute; SLAM</span>
-            <span>Localisation : Bar-le-Duc</span>
-          </div>
-        </div>
-
-        <aside class="about-card__highlight">
-          <p class="highlight-kicker">Document</p>
-          <h3>Mon CV</h3>
-          <p>Retrouver mon parcours, mes exp&eacute;riences et mes comp&eacute;tences dans un format complet.</p>
-          <a class="about-card__cta" href="assets/pdf/CV_Cloe_WZ.pdf" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
-        </aside>
-      </div>
-
-      <div class="about-card__stats">
-        <article>
-          <strong>2023 - 2026</strong>
-          <span>BTS SIO option SLAM en cours</span>
-        </article>
-        <article>
-          <strong>3 stages</strong>
-          <span>AgroBio, Colinon Alexis SARL et EURL Szlazak</span>
-        </article>
-        <article>
-          <strong>Stack</strong>
-          <span>HTML, CSS, JS, PHP, MySQL, Laravel, Java</span>
-        </article>
-      </div>
-
-      <div class="about-card__grid">
-        <section class="info-block info-block-left">
-          <h3>Parcours</h3>
-          <div class="timeline-list">
-            <article class="timeline-entry">
-              <span class="timeline-entry__year">2016 / 2020</span>
-              <p>Brevet des coll&egrave;ges, mention assez bien.</p>
-              <p>Stage d'observation d'une semaine au Conseil d&eacute;partemental de la Meuse &agrave; Bar-le-Duc.</p>
-            </article>
-
-            <article class="timeline-entry">
-              <span class="timeline-entry__year">2020 / 2023</span>
-              <p>Baccalaur&eacute;at technologique STMG, option SIG.</p>
-              <p>Approche progressive des outils num&eacute;riques et de l'organisation de projet.</p>
-            </article>
-
-            <article class="timeline-entry">
-              <span class="timeline-entry__year">2023 / 2026</span>
-              <p>BTS SIO, sp&eacute;cialit&eacute; SLAM, formation en cours.</p>
-              <p>Stages effectu&eacute;s chez AgroBio, SARL Colinon Alexis et EURL Szlazak.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="info-block info-block-right">
-          <h3>Comp&eacute;tences</h3>
-
-          <div class="software-showcase">
-            <div class="software-icons">
-              <div class="software-icon software-icon-procreate">
-                <img src="images/skills/html5.svg" alt="HTML5">
-              </div>
-              <div class="software-icon software-icon-indesign">
-                <img src="images/skills/css.svg" alt="CSS3">
-              </div>
-              <div class="software-icon software-icon-illustrator">
-                <img src="images/skills/javascript.svg" alt="JavaScript">
-              </div>
-              <div class="software-icon software-icon-premiere">
-                <img src="images/skills/php.svg" alt="PHP">
-              </div>
-              <div class="software-icon software-icon-photoshop">
-                <img src="images/skills/mysql.svg" alt="MySQL">
-              </div>
-              <div class="software-icon software-icon-git">
-                <img src="images/skills/java.svg" alt="Java">
-              </div>
-              <div class="software-icon software-icon-github">
-                <img src="images/skills/laravel.svg" alt="Laravel">
-              </div>
-              <div class="software-icon software-icon-postman">
-                <img src="images/skills/git.svg" alt="Git">
-              </div>
-              <div class="software-icon software-icon-procreate">
-                <img src="images/skills/github.svg" alt="GitHub">
-              </div>
-              <div class="software-icon software-icon-indesign">
-                <img src="images/skills/postman.svg" alt="Postman">
-              </div>
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="cyan">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Présentation | Slide 01</p>
             </div>
-
-            <div class="software-bars">
-              <div class="software-bar">
-                <span>HTML5</span>
-                <div><i style="width: 92%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>CSS3</span>
-                <div><i style="width: 88%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>JavaScript</span>
-                <div><i style="width: 78%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>PHP</span>
-                <div><i style="width: 68%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>Laravel / MySQL</span>
-                <div><i style="width: 60%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>Java</span>
-                <div><i style="width: 62%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>Git / GitHub</span>
-                <div><i style="width: 72%"></i></div>
-              </div>
-              <div class="software-bar">
-                <span>Postman</span>
-                <div><i style="width: 58%"></i></div>
+            <div class="skills-ppt-cover">
+              <p class="skills-ppt-cover__eyebrow">BTS SIO SLAM</p>
+              <h1>PRÉSENTATION</h1>
+              <p class="skills-ppt-cover__subtitle">Étudiante à Bar-le-Duc, orientée développement web et applications, avec un portfolio construit autour de projets concrets.</p>
+              <div class="skills-ppt-cover__meta">
+                <span id="stageCounter" aria-live="polite">Slide 1 / 4</span>
+                <span>2023 - 2026</span>
+                <span>Bar-le-Duc</span>
               </div>
             </div>
           </div>
+        </article>
 
-          <div class="about-card__secondary-cta">
-            <a class="about-card__cta about-card__cta-secondary" href="Tableau_de_synthèse.xlsx" target="_blank" rel="noopener noreferrer">T&eacute;l&eacute;charger le tableau de synth&egrave;se</a>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Présentation | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Profil</p>
+                <h2>Mon parcours en quelques repères</h2>
+                <div class="skills-ppt-copy">
+                  <p>Je suis étudiante en BTS SIO, option SLAM, au lycée Raymond Poincaré à Bar-le-Duc. J’aime concevoir des sites et des applications qui relient interface, logique métier et organisation claire du code.</p>
+                  <p>Mon parcours m’a amenée à travailler sur des stages variés, des projets web et un projet personnel plus ambitieux, LoreRoom, qui me permet de progresser sur des besoins plus complets.</p>
+                </div>
+                <ul class="skills-ppt-list">
+                  <li>BTS SIO option SLAM en cours de 2023 à 2026</li>
+                  <li>Baccalauréat technologique STMG, option SIG</li>
+                  <li>Trois stages réalisés entre 2024 et 2026</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Ce qui me motive</strong>
+                  <p>Construire des interfaces utiles, faire progresser la logique d’une application et transformer une idée en projet utilisable.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Cadre</strong>
+                  <p>Mes expériences se situent entre apprentissage scolaire, missions de stage concrètes et développement personnel en autonomie.</p>
+                </section>
+              </div>
+            </div>
           </div>
-        </section>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="violet">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Présentation | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Compétences</p>
+                <h2>Les technologies que je pratique</h2>
+                <ul class="skills-ppt-list">
+                  <li>HTML5 et CSS3 pour l’intégration et la mise en forme</li>
+                  <li>JavaScript pour les interactions et comportements dynamiques</li>
+                  <li>PHP et Laravel pour les applications web et la logique serveur</li>
+                  <li>MySQL pour la modélisation et la gestion de données</li>
+                  <li>Java pour renforcer mes bases de programmation</li>
+                  <li>Git et GitHub pour versionner et partager mes projets</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Point fort</strong>
+                  <p>J’aime faire le lien entre le rendu visuel, la structure des données et l’organisation générale d’un projet.</p>
+                </section>
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Progression visée</strong>
+                  <p>Continuer à approfondir Laravel, les applications plus complètes et les bonnes pratiques de conception.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Présentation | Slide 04</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Documents</p>
+                <h2>Supports à consulter</h2>
+                <div class="skills-ppt-copy">
+                  <p>Cette page centralise ma présentation générale, mais le portfolio comprend aussi mon CV, mes rapports de stage, ma veille technologique et mon tableau de synthèse.</p>
+                </div>
+                <div class="skills-ppt-actions">
+                  <a class="skills-ppt-cta" href="assets/pdf/CV_Cloe_WZ.pdf" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
+                  <a class="skills-ppt-cta" href="Tableau_de_synthèse.xlsx" target="_blank" rel="noopener noreferrer" style="margin-left: 12px; background: linear-gradient(135deg, #184b74, #0f2d47);">Voir le tableau de synthèse</a>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Navigation</strong>
+                  <p>Les autres pages du portfolio détaillent mes stages, ma veille technologique, mon projet personnel et mes objectifs pour la suite.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Fil conducteur</strong>
+                  <p>Mon portfolio a été pensé pour montrer une progression logique entre apprentissage, pratique et projection vers l’avenir.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Slide suivante">
+          &#8250;
+        </button>
+      </div>
+
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir la couverture"></button>
+        <button type="button" aria-label="Voir le profil"></button>
+        <button type="button" aria-label="Voir les compétences"></button>
+        <button type="button" aria-label="Voir les documents"></button>
       </div>
     </section>
   </main>
-
-  <script src="assets/js/aboutme.js"></script>
+  <script src="assets/js/pages.js?v=2"></script>
 </body>
 </html>

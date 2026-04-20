@@ -6,14 +6,14 @@
   <title>Portfolio | Stage 2024</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/pages.css?v=9">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
 </head>
-<body>
+<body class="stage-page">
   <div class="page-bg page-bg-orange" aria-hidden="true"></div>
   <main class="content-shell">
     <header class="content-topbar reveal">
-      <a class="content-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
+      <a class="content-brand" href="chapters.html">Cloé Wlodarski-Zminka</a>
       <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="stage2024-nav" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
@@ -21,7 +21,7 @@
       </button>
       <nav class="content-nav" id="stage2024-nav">
         <a href="chapters.html">Home</a>
-        <a href="aboutme.html">Pr&eacute;sentation</a>
+        <a href="aboutme.html">Présentation</a>
         <a class="is-active" href="projects.html">Stages</a>
         <a href="skills.html">Veille techno</a>
         <a href="projetsperso.html">Projets perso</a>
@@ -29,73 +29,119 @@
       </nav>
     </header>
 
-    <section class="content-hero reveal">
-      <p class="content-kicker">Stage 2024</p>
-      <h1>Agrobio</h1>
-      <p class="content-lead">Stage effectu&eacute; chez Agro Bio Laboratoires d'analyses industrielles &agrave; Bar-le-Duc, du 27 mai 2024 au 5 juillet 2024.</p>
-    </section>
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="orange">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Slide précédente">
+          &#8249;
+        </button>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Introduction</p>
-        <h2>Contexte</h2>
-        <p>Agrobio est un laboratoire d'analyses agricoles situ&eacute; &agrave; Bar-le-Duc. Cette structure travaille sur des contr&ocirc;les et analyses essentiels dans le domaine agroalimentaire.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="orange">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2024 | Slide 01</p>
+            </div>
+            <div class="skills-ppt-layout" style="align-items: center; min-height: calc(100vh - 240px);">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Stage 01</p>
+                <h2>AgroBio</h2>
+                <div class="skills-ppt-copy">
+                  <p>Un premier stage centré sur la progression technique en PHP, Java, programmation orientée objet et résolution de problèmes concrets.</p>
+                </div>
+                <div class="skills-ppt-cover__meta" style="justify-content: flex-start;">
+                  <span id="stageCounter" aria-live="polite">Slide 1 / 3</span>
+                  <span>27 mai 2024 - 5 juillet 2024</span>
+                  <span>Bar-le-Duc</span>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <img src="assets/images/logo1" alt="Logo AgroBio">
+                  <strong>Entreprise</strong>
+                  <p>Laboratoire d’analyses agricoles et agroalimentaires à Bar-le-Duc.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Objectif</p>
-        <h2>Progression technique</h2>
-        <p>Ce stage avait pour objectif de renforcer mes comp&eacute;tences en programmation, surtout en PHP et en Java, &agrave; travers des exercices et mini-projets.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2024 | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Missions</p>
+                <h2>Ce que j’ai réalisé pendant ce stage</h2>
+                <ul class="skills-ppt-list">
+                  <li>Exercices PHP pour consolider mes bases</li>
+                  <li>Création d’un blog avec ajout, modification et suppression de publications</li>
+                  <li>Développement d’un système d’inventaire orienté objet avec gestion des stocks</li>
+                  <li>Travail sur un projet Java de bibliothèque virtuelle</li>
+                  <li>Résolution d’un problème WampServer bloquant l’accès à phpMyAdmin</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Contexte</strong>
+                  <p>AgroBio est un laboratoire d’analyses agricoles et agroalimentaires, avec un environnement professionnel sérieux et concret.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Objectif du stage</strong>
+                  <p>Renforcer mes compétences en programmation grâce à des exercices progressifs, des mini-projets et un accompagnement technique.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Travaux</p>
-        <h2>T&acirc;ches r&eacute;alis&eacute;es</h2>
-        <ul class="content-list">
-          <li>Exercices PHP et cr&eacute;ation d'un blog</li>
-          <li>Syst&egrave;me d'inventaire orient&eacute; objet</li>
-          <li>R&eacute;solution d'un probl&egrave;me WampServer / phpMyAdmin</li>
-          <li>Projet Java de biblioth&egrave;que virtuelle</li>
-        </ul>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2024 | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Bilan</p>
+                <h2>Ce que ce stage m’a apporté</h2>
+                <div class="skills-ppt-copy">
+                  <p>Ce premier stage a été très formateur. J’y ai consolidé mes bases en PHP, gagné en repères en programmation orientée objet et progressé en Java sur un projet concret.</p>
+                  <p>J’ai aussi appris à diagnostiquer et résoudre un problème technique sur mon environnement local, ce qui m’a aidée à gagner en autonomie.</p>
+                </div>
+                <div class="skills-ppt-actions">
+                  <a class="skills-ppt-cta" href="assets/pdf/Rapport1.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+                  <a class="skills-ppt-cta" href="https://github.com/Cloe-png/Stage1" target="_blank" rel="noopener noreferrer" style="margin-left: 12px; background: linear-gradient(135deg, #184b74, #0f2d47);">Voir le dépôt Git</a>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Compétences acquises</strong>
+                  <p>PHP, POO, Java, autonomie sur l’environnement local et méthode de résolution de problèmes.</p>
+                </section>
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Suite</strong>
+                  <p>Ce stage a posé les bases de mes expériences suivantes en développement web et applications.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Bilan</p>
-        <h2>Comp&eacute;tences acquises</h2>
-        <p>J'ai consolid&eacute; mes bases en PHP, approfondi Java, gagn&eacute; en autonomie sur mes outils et appris &agrave; r&eacute;soudre un blocage technique concret.</p>
-      </article>
-    </section>
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Slide suivante">
+          &#8250;
+        </button>
+      </div>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Projet</p>
-        <h2>Blog et inventaire</h2>
-        <p>Le blog permettait de g&eacute;rer des publications, tandis que le syst&egrave;me d'inventaire m'a aid&eacute;e &agrave; mieux comprendre la POO, la structure des classes et la gestion des stocks.</p>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Conclusion</p>
-        <h2>Ce que j'en retiens</h2>
-        <p>Ce stage a &eacute;t&eacute; tr&egrave;s formateur. Il m'a permis de mesurer mes progr&egrave;s et de confirmer mon int&eacute;r&ecirc;t pour le d&eacute;veloppement.</p>
-      </article>
-    </section>
-
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Rapport</p>
-        <h2>Document associ&eacute;</h2>
-        <p>Le rapport complet du stage 2024 est disponible dans le portfolio.</p>
-        <p><a class="stage-panel__button" href="assets/pdf/Rapport1.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le rapport</a></p>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Navigation</p>
-        <h2>Suite</h2>
-        <p>Tu peux revenir &agrave; la page stages ou passer directement au stage 2025.</p>
-        <p><a class="stage-panel__button stage-panel__button-alt" href="projects.html">Retour aux stages</a> <a class="stage-panel__button stage-panel__button-muted" href="stage-2025.html">Voir 2025</a></p>
-      </article>
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir la couverture"></button>
+        <button type="button" aria-label="Voir les missions"></button>
+        <button type="button" aria-label="Voir le bilan"></button>
+      </div>
     </section>
   </main>
-  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/pages.js?v=2"></script>
 </body>
 </html>

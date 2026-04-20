@@ -6,14 +6,14 @@
   <title>Portfolio | Stage 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/pages.css?v=9">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
 </head>
-<body>
+<body class="stage-page">
   <div class="page-bg page-bg-violet" aria-hidden="true"></div>
   <main class="content-shell">
     <header class="content-topbar reveal">
-      <a class="content-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
+      <a class="content-brand" href="chapters.html">Cloé Wlodarski-Zminka</a>
       <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="stage2026-nav" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
@@ -21,7 +21,7 @@
       </button>
       <nav class="content-nav" id="stage2026-nav">
         <a href="chapters.html">Home</a>
-        <a href="aboutme.html">Pr&eacute;sentation</a>
+        <a href="aboutme.html">Présentation</a>
         <a class="is-active" href="projects.html">Stages</a>
         <a href="skills.html">Veille techno</a>
         <a href="projetsperso.html">Projets perso</a>
@@ -29,86 +29,120 @@
       </nav>
     </header>
 
-    <section class="content-hero reveal">
-      <p class="content-kicker">Stage 2026</p>
-      <h1>EURL Szlazak</h1>
-      <p class="content-lead">Un stage centr&eacute; sur le d&eacute;veloppement web, la digitalisation des outils de l'entreprise et l'am&eacute;lioration de son organisation interne.</p>
-    </section>
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="violet">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Slide précédente">
+          &#8249;
+        </button>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Entreprise</p>
-        <h2>EURL Szlazak</h2>
-        <p>Troisi&egrave;me stage de BTS SIO, effectu&eacute; du 12 janvier 2026 au 20 f&eacute;vrier 2026 autour d'un besoin concret de digitalisation.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="violet">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2026 | Slide 01</p>
+            </div>
+            <div class="skills-ppt-layout" style="align-items: center; min-height: calc(100vh - 240px);">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Stage 03</p>
+                <h2>EURL Szlazak</h2>
+                <div class="skills-ppt-copy">
+                  <p>Un stage orienté digitalisation, avec un site vitrine, une application web Laravel et une organisation interne repensée autour d’outils numériques.</p>
+                </div>
+                <div class="skills-ppt-cover__meta" style="justify-content: flex-start;">
+                  <span id="stageCounter" aria-live="polite">Slide 1 / 3</span>
+                  <span>12 janvier 2026 - 20 février 2026</span>
+                  <span>Savonnière-devant-Bar</span>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <img src="assets/images/logo3.png" alt="Logo EURL Szlazak">
+                  <strong>Entreprise</strong>
+                  <p>Entreprise du bâtiment avec besoins concrets en site vitrine et gestion interne.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Axes</p>
-        <h2>Trois objectifs clairs</h2>
-        <ul class="content-list">
-          <li>D&eacute;veloppement web</li>
-          <li>Digitalisation des outils de l'entreprise</li>
-          <li>Am&eacute;lioration de l'organisation interne</li>
-        </ul>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2026 | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Réalisations</p>
+                <h2>Une application pensée pour le terrain</h2>
+                <ul class="skills-ppt-list">
+                  <li>Création d’un site web vitrine en HTML, CSS et JavaScript</li>
+                  <li>Mise en ligne du site via Netlify</li>
+                  <li>Développement d’une application web avec Laravel</li>
+                  <li>Modules pour les chantiers, le stockage, les équipes, l’agenda et les fiches d’heures</li>
+                  <li>Authentification, gestion des rôles, base de données et déploiement sur o2switch</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Objectif</strong>
+                  <p>Renforcer la présence en ligne de l’entreprise tout en améliorant l’organisation interne avec des outils adaptés à ses besoins réels.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Technologies</strong>
+                  <p>HTML, CSS, JavaScript, PHP, Laravel, MySQL, FTP, cPanel et architecture MVC.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Mission</p>
-        <h2>Solutions num&eacute;riques pour l'entreprise</h2>
-        <p>Ma mission principale a &eacute;t&eacute; de d&eacute;velopper un site web vitrine et une application web de gestion interne pour optimiser le suivi des chantiers, des &eacute;quipes et des ressources.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Stage 2026 | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Bilan</p>
+                <h2>Une forte progression en autonomie</h2>
+                <div class="skills-ppt-copy">
+                  <p>Ce stage m’a permis de développer mes compétences techniques sur un projet plus complet, avec de la logique métier, de l’organisation interne et de vraies contraintes de déploiement.</p>
+                  <p>J’y ai gagné en autonomie, en rigueur, en compréhension des besoins d’un client professionnel et en capacité à résoudre des problèmes concrets.</p>
+                </div>
+                <div class="skills-ppt-actions">
+                  <a class="skills-ppt-cta" href="assets/pdf/Rapport3.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a>
+                  <a class="skills-ppt-cta" href="https://szlazakgestion.szlazakgestion.fr/" target="_blank" rel="noopener noreferrer" style="margin-left: 12px;">Voir l'application</a>
+                  <a class="skills-ppt-cta" href="https://eurlszlazak.netlify.app/" target="_blank" rel="noopener noreferrer" style="margin-left: 12px; background: linear-gradient(135deg, #184b74, #0f2d47);">Voir le site vitrine</a>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Compétences transversales</strong>
+                  <p>Organisation du travail, adaptation face aux imprévus, communication avec le chef d’entreprise et recherche autonome de solutions.</p>
+                </section>
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Impact</strong>
+                  <p>Cette expérience a confirmé mon intérêt pour le développement web appliqué à des besoins professionnels concrets.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">T&acirc;ches r&eacute;alis&eacute;es</p>
-        <ul class="content-list">
-          <li>Cr&eacute;ation d'un site web vitrine en HTML, CSS et JavaScript</li>
-          <li>Mise en ligne du site via Netlify</li>
-          <li>D&eacute;veloppement d'une application web avec Laravel</li>
-          <li>Cr&eacute;ation de modules pour les chantiers, le stockage, les &eacute;quipes, l'agenda et les fiches d'heures</li>
-          <li>Mise en place de l'authentification et de la gestion des r&ocirc;les</li>
-          <li>D&eacute;ploiement sur o2switch, base de donn&eacute;es et r&eacute;solution de probl&egrave;mes techniques</li>
-        </ul>
-      </article>
-    </section>
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Slide suivante">
+          &#8250;
+        </button>
+      </div>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Comp&eacute;tences techniques</p>
-        <ul class="content-list">
-          <li>HTML, CSS, JavaScript et PHP</li>
-          <li>Framework Laravel</li>
-          <li>Base de donn&eacute;es MySQL</li>
-          <li>D&eacute;ploiement via FTP et cPanel</li>
-          <li>Architecture MVC, routes et contr&ocirc;leurs</li>
-          <li>Authentification, r&ocirc;les et sessions</li>
-        </ul>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Comp&eacute;tences transversales</p>
-        <ul class="content-list">
-          <li>Autonomie dans la recherche de solutions</li>
-          <li>Adaptation face aux probl&egrave;mes techniques</li>
-          <li>Organisation du travail</li>
-          <li>Compr&eacute;hension des besoins d'un client professionnel</li>
-          <li>Communication avec le chef d'entreprise</li>
-        </ul>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Bilan</p>
-        <h2>Progression confirm&eacute;e</h2>
-        <p>Ce stage m'a permis de renforcer mes comp&eacute;tences techniques, de gagner en autonomie et en rigueur, et de confirmer mon int&eacute;r&ecirc;t pour le d&eacute;veloppement web dans un cadre professionnel concret.</p>
-      </article>
-
-      <article class="content-card reveal">
-        <p class="card-index">Navigation</p>
-        <h2>Retour</h2>
-        <p><a class="stage-panel__button" href="assets/pdf/Rapport3.pdf" target="_blank" rel="noopener noreferrer">Voir le rapport</a></p>
-        <p><a class="stage-panel__button stage-panel__button-alt" href="projects.html">Retour aux stages</a></p>
-      </article>
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir la couverture"></button>
+        <button type="button" aria-label="Voir les réalisations"></button>
+        <button type="button" aria-label="Voir le bilan"></button>
+      </div>
     </section>
   </main>
-  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/pages.js?v=2"></script>
 </body>
 </html>

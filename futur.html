@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Futur</title>
+  <title>Portfolio | Avenir</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/pages.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
 </head>
-<body>
-  <div class="page-bg" aria-hidden="true"></div>
+<body class="stage-page">
+  <div class="page-bg page-bg-orange" aria-hidden="true"></div>
   <main class="content-shell">
     <header class="content-topbar reveal">
       <a class="content-brand" href="chapters.html">Clo&eacute; Wlodarski-Zminka</a>
@@ -35,45 +35,112 @@
       </nav>
     </header>
 
-    <section class="content-hero reveal">
-      <p class="content-kicker">05 / Futur</p>
-      <h1>La suite du parcours : approfondir le d&eacute;veloppement et construire des projets plus complets.</h1>
-      <p class="content-lead">
-        L'ancienne page <code>futur.html</code> &eacute;tait encore vide. Je lui ai redonn&eacute; une vraie place dans le portfolio
-        pour montrer les objectifs de progression et les pistes envisag&eacute;es apr&egrave;s le BTS.
-      </p>
-    </section>
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="orange">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Slide pr&eacute;c&eacute;dente">
+          &#8249;
+        </button>
 
-    <section class="card-grid">
-      <article class="content-card reveal">
-        <p class="card-index">Objectif</p>
-        <h2>Monter en comp&eacute;tences</h2>
-        <p>Continuer &agrave; progresser en d&eacute;veloppement web, en particulier sur les projets complets reliant interface, logique m&eacute;tier et base de donn&eacute;es.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="orange">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Avenir | Slide 01</p>
+            </div>
+            <div class="skills-ppt-cover">
+              <p class="skills-ppt-cover__eyebrow">Projection</p>
+              <h1>AVENIR</h1>
+              <p class="skills-ppt-cover__subtitle">Je vais chercher du travail, continuer &agrave; construire des projets concrets &agrave; c&ocirc;t&eacute;, et peut-&ecirc;tre me lancer dans des projets en ind&eacute;pendant autour de sites web et d'id&eacute;es personnelles comme LoreRoom.</p>
+              <div class="skills-ppt-cover__meta">
+                <span id="stageCounter" aria-live="polite">Slide 1 / 3</span>
+                <span>Projet pro</span>
+                <span>Freelance &amp; projets perso</span>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Orientation</p>
-        <h2>Poursuite d'&eacute;tudes ou exp&eacute;rience pro</h2>
-        <p>Explorer les opportunit&eacute;s qui permettent de consolider les acquis du BTS tout en travaillant sur des projets concrets.</p>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Avenir | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Orientation</p>
+                <h2>Travailler et continuer &agrave; cr&eacute;er &agrave; c&ocirc;t&eacute;</h2>
+                <div class="skills-ppt-copy">
+                  <p>Apr&egrave;s le BTS, mon objectif principal est de trouver un travail, tout en continuant &agrave; avancer sur mes projets personnels et &agrave; garder un lien concret avec la cr&eacute;ation web.</p>
+                </div>
+                <ul class="skills-ppt-list">
+                  <li>Trouver un travail et construire la suite de mon parcours</li>
+                  <li>Continuer &agrave; d&eacute;velopper mes comp&eacute;tences en dehors du cadre scolaire</li>
+                  <li>Garder une pratique concr&egrave;te du web &agrave; travers mes projets</li>
+                  <li>Faire &eacute;voluer mes id&eacute;es vers des r&eacute;alisations plus abouties</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Cap recherch&eacute;</strong>
+                  <p>Construire une suite coh&eacute;rente apr&egrave;s le BTS, avec du travail d'un c&ocirc;t&eacute; et des projets personnels qui continuent d'avancer.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Motivation</strong>
+                  <p>Je veux garder une vraie dynamique de progression, continuer &agrave; apprendre par la pratique et faire vivre mes id&eacute;es sur le long terme.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Technique</p>
-        <h2>Approfondissements vis&eacute;s</h2>
-        <ul class="content-list">
-          <li>PHP et Laravel</li>
-          <li>JavaScript et interfaces plus dynamiques</li>
-          <li>Architecture de projets et bonnes pratiques</li>
-        </ul>
-      </article>
+        <article class="stage-slide stage-slide-clean" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Avenir | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Projets</p>
+                <h2>D&eacute;velopper mes id&eacute;es et peut-&ecirc;tre travailler en ind&eacute;pendant</h2>
+                <div class="skills-ppt-copy">
+                  <p>En parall&egrave;le d'une recherche d'emploi, je pense aussi &agrave; me lancer sur des projets en ind&eacute;pendant, par exemple en cr&eacute;ant des sites pour des particuliers ou pour des demandes simples mais utiles.</p>
+                  <p>Je veux aussi continuer &agrave; transformer les id&eacute;es qui me passent par la t&ecirc;te en vrais projets. LoreRoom en est le meilleur exemple, et si tout va bien, je compte le mettre en ligne d&egrave;s l'ann&eacute;e prochaine.</p>
+                </div>
+                <ul class="skills-ppt-list">
+                  <li>Cr&eacute;er des sites web pour des particuliers ou petits besoins concrets</li>
+                  <li>Continuer &agrave; d&eacute;velopper des projets personnels ambitieux</li>
+                  <li>Mettre LoreRoom en ligne d&egrave;s l'ann&eacute;e prochaine si tout avance bien</li>
+                  <li>Faire &eacute;voluer le portfolio au fil de mes futures exp&eacute;riences</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Vision</strong>
+                  <p>Construire une suite logique entre emploi, projets personnels et possibilit&eacute;s freelance, sans arr&ecirc;ter de cr&eacute;er.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>LoreRoom</strong>
+                  <p>Ce projet repr&eacute;sente bien ce que j'ai envie de poursuivre : une id&eacute;e personnelle, structur&eacute;e, ambitieuse et pens&eacute;e pour aller jusqu'&agrave; la mise en ligne.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="content-card reveal">
-        <p class="card-index">Vision</p>
-        <h2>Construire un portfolio &eacute;volutif</h2>
-        <p>Faire de ce site une base durable, facile &agrave; enrichir avec les stages, la veille, les projets et les futures exp&eacute;riences.</p>
-      </article>
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Slide suivante">
+          &#8250;
+        </button>
+      </div>
+
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir la couverture"></button>
+        <button type="button" aria-label="Voir l'orientation"></button>
+        <button type="button" aria-label="Voir les projets"></button>
+      </div>
     </section>
   </main>
-  <script src="assets/js/pages.js"></script>
+  <script src="assets/js/pages.js?v=2"></script>
 </body>
 </html>
