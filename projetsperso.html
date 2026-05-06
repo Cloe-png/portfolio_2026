@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Projets perso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
+</head>
+<body class="stage-page">
+  <div class="page-bg page-bg-orange" aria-hidden="true"></div>
+  <main class="content-shell">
+    <header class="content-topbar reveal">
+      <a class="content-brand" href="chapters.html">Cloé Wlodarski-Zminka</a>
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="projets-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="content-nav" id="projets-nav">
+        <a href="chapters.html">Home</a>
+        <a href="aboutme.html">Présentation</a>
+        <a href="projects.html">Stages</a>
+        <a href="skills.html">Veille techno</a>
+        <a class="is-active" href="projetsperso.html">Projet perso</a>
+        <a href="futur.html">Avenir</a>
+      </nav>
+    </header>
+
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="orange">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Section précédente">
+          &#8249;
+        </button>
+
+        <article class="stage-slide stage-slide-clean is-active" data-stage-theme="orange">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Projet perso | Slide 01</p>
+            </div>
+            <div class="skills-ppt-cover">
+              <p class="skills-ppt-cover__eyebrow">Projet personnel</p>
+              <h1>LOREROOM</h1>
+              <p class="skills-ppt-cover__subtitle">Une application de création et de gestion d’univers imaginaires, pensée comme un projet complet avec backend, frontend, base de données et logique métier.</p>
+              <div class="skills-ppt-cover__meta">
+                <span id="stageCounter" aria-live="polite">Slide 1 / 5</span>
+                <span>Application web</span>
+                <span>Laravel, MySQL, Blade</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="violet">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Projet perso | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Backend</p>
+                <h2>Une vraie logique applicative</h2>
+                <ul class="skills-ppt-list">
+                  <li>Contrôleurs dédiés aux mondes, personnages, chroniques, galerie et lore</li>
+                  <li>Middlewares pour l’authentification, les sessions et le contexte du monde sélectionné</li>
+                  <li>Validations complexes sur les formulaires, fichiers et données</li>
+                  <li>Gestion d’exports et de médias dans l’application</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Ce que cela montre</strong>
+                  <p>LoreRoom ne se limite pas à de la saisie de données. Le backend sert une logique cohérente et protège l’ensemble de l’application.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Stack</strong>
+                  <p>Laravel, PHP, validations, organisation modulaire des contrôleurs et des règles métier.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Projet perso | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Frontend</p>
+                <h2>Une interface pensée pour créer</h2>
+                <div class="skills-ppt-copy">
+                  <p>Le frontend Blade a été conçu comme un espace de gestion lisible et immersif, plus proche d’un carnet de lore que d’un simple back-office technique.</p>
+                </div>
+                <ul class="skills-ppt-list">
+                  <li>Navigation structurée entre mondes, personnages, chroniques et galerie</li>
+                  <li>Pages de gestion dédiées à chaque module</li>
+                  <li>Interface visuelle pensée pour manipuler beaucoup d’informations</li>
+                  <li>Identité visuelle cohérente avec l’univers du projet</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Intention</strong>
+                  <p>Rendre l’expérience agréable et cohérente avec le contenu du projet, sans tomber dans une interface neutre.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Technos</strong>
+                  <p>Blade, CSS et JavaScript pour une interface structurée, lisible et personnalisée.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Projet perso | Slide 04</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Données</p>
+                <h2>Une base relationnelle riche</h2>
+                <ul class="skills-ppt-list">
+                  <li>Tables pour les mondes, personnages, lieux, chroniques, factions, métiers et espèces</li>
+                  <li>Tables pivot pour les relations croisées et les liens multiples</li>
+                  <li>Chronologies construites à partir de plusieurs sources</li>
+                  <li>Structure prévue pour faire grandir le projet proprement</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Point fort</strong>
+                  <p>La base de données ne stocke pas seulement des fiches isolées, elle relie les modules entre eux pour enrichir la lecture de l’univers.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Compétence montrée</strong>
+                  <p>Modéliser des données complexes et les rendre exploitables à la fois par l’interface et la logique métier.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean" data-stage-theme="violet">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>Projet perso | Slide 05</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Logique métier</p>
+                <h2>Le projet prend vie par ses règles</h2>
+                <div class="skills-ppt-copy">
+                  <p>Les synchronisations automatiques, les liens familiaux, les chronologies et le tableau de bord transforment LoreRoom en application cohérente, et pas seulement en collection de formulaires.</p>
+                </div>
+                <ul class="skills-ppt-list">
+                  <li>Relations de couple, famille et fratrie reconstruites automatiquement</li>
+                  <li>Frises temporelles globales et par personnage</li>
+                  <li>Dashboard `manage` avec compteurs et événements utiles</li>
+                  <li>Application pensée pour un usage réel et évolutif</li>
+                </ul>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini skills-ppt-mini-accent">
+                  <strong>Ce que LoreRoom représente</strong>
+                  <p>Mon projet personnel le plus complet à ce jour, et un bon reflet de ce que j’aime construire.</p>
+                </section>
+                <section class="skills-ppt-mini">
+                  <strong>Valeur dans le portfolio</strong>
+                  <p>Il montre ma capacité à tenir ensemble interface, structure des données, logique métier et cohérence globale.</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Section suivante">
+          &#8250;
+        </button>
+      </div>
+
+      <div class="stage-selector__pagination" id="stagePagination">
+        <button class="is-active" type="button" aria-label="Voir l'introduction"></button>
+        <button type="button" aria-label="Voir le backend"></button>
+        <button type="button" aria-label="Voir le frontend"></button>
+        <button type="button" aria-label="Voir la base de données"></button>
+        <button type="button" aria-label="Voir la logique métier"></button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/pages.js?v=2"></script>
+</body>
+</html>

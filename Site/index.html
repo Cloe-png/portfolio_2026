@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Plâterie et Construction Sèche Marne - Plaquiste Alexis Colinon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .banner {
+            background: url('image.png') center/cover no-repeat;
+            color: white;
+            padding: 50px 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        }
+        header {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('votre_image.jpg');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            color: #c8102e;
+        }
+
+        .text-container {
+            background-color: #c8102e;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .top-bar {
+            background-color: #c8102e;
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 0.9rem;
+            color: black;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link.active {
+            color: #c8102e;
+        }
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #c8102e;
+            margin: 2px auto 0;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #c8102e;
+        }
+        .hero-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+        .hero-section p {
+            font-size: 1.1rem;
+            color: black;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .services-section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+        .services-section h2 {
+            text-align: center;
+            color: #c8102e;
+            margin-bottom: 40px;
+        }
+        .services-section .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .services-section .card {
+            transition: transform 0.3s ease, scale 0.3s ease;
+        }
+
+        .services-section .card:hover {
+            transform: translateY(-10px) scale(1.1); /* Déplacement et agrandissement */
+        }
+
+        .advantages-section {
+            background: linear-gradient(135deg, #f7f7f7, #ebebeb);
+            padding: 60px 20px;
+        }
+        .advantages-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #c8102e;
+        }
+        .advantages-section li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        .advantages-section li i {
+            color: #c8102e;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-top {
+            padding-bottom: 20px;
+        }
+        .footer-bottom {
+            background-color: rgb(210, 210, 210);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        .footer-bottom a {
+            text-decoration: none;
+            color: #c8102e;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            color: #c8102e;
+        }
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-image: url('image_2.jpg');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .hero-section .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #c8102e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c8102e;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+        }
+
+        .cta-section a {
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .cta-section a:hover {
+            color: #000; /* Change la couleur au survol */
+        }
+        .voir-photos-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #c8102e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .voir-photos-btn:hover {
+            transform: scale(1.2); /* Agrandit le bouton */
+            background-color: #a50d24; /* Change légèrement la couleur */
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1050;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Barre supérieure avec coordonnées -->
+<div class="top-bar text-center" data-aos="fade-down">
+    <span><i class="fas fa-map-marker-alt"></i> Villers-le-Sec, 51250</span>
+    <span class="mx-3"><i class="fas fa-phone"></i> Tél : 06 43 20 93 34</span>
+    <span><i class="fas fa-envelope"></i> <a href="mailto:colinon.plaquiste@gmail.com">colinon.plaquiste@gmail.com</a></span>
+    <span class="mx-3">Suivez-nous :
+        <a href="https://www.facebook.com/people/Colinon-Alexis-Plaquiste/100063778862976/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/colinon_plaquiste/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@colinon_platrerie" target="_blank"><i  class="fab fa-tiktok"></i></a>
+    </span>
+</div>
+
+<!-- Barre de navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="Logo.png" alt="Logo Alexis Colinon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="qui_somme_nous.html">QUI SOMMES-NOUS ?</a>
+                </li>
+                <!-- Dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="service_platerie.html">SERVICE PLÂTRERIES</a></li>
+                        <li><a class="dropdown-item" href="service_construction.html">SERVICE CONSTRUCTIONS SÈCHES</a></li>
+                        <li><a class="dropdown-item" href="isolation.html">ISOLATION</a></li>
+                        <li><a class="dropdown-item" href="faux_plafond.html">FAUX PLAFOND</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">GALERIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Héro -->
+<header style="text-align: center; padding: 0; margin: 0;" data-aos="zoom-in">
+    <h1><strong>Bienvenue sur le site</strong></h1>
+    <h1><strong> Internet de Colinon Alexis</strong></h1>
+    <p>Spécialiste en plâtrerie et construction sèche dans la Marne et la Meuse</p>
+</header>
+
+<!-- Services -->
+<section class="services-section" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center">Nos Services</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-right">
+                <a href="service_platerie.html" class="card text-center p-3 text-decoration-none">
+                    <i class="fas fa-tools fa-3x text-danger"></i>
+                    <h4 class="mt-2">Service Plâtrerie</h4>
+                    <p>Briques, moulures et finitions sur mesure.</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
+                <a href="service_construction.html" class="card text-center p-3 text-decoration-none">
+                    <i class="fas fa-home fa-3x text-danger"></i>
+                    <h4 class="mt-2">Construction Sèche</h4>
+                    <p>Doublage, cloisons, plafonds suspendus.</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <a href="isolation.html" class="card text-center p-3 text-decoration-none">
+                    <i class="fas fa-snowflake fa-3x text-danger"></i>
+                    <h4 class="mt-2">Isolation</h4>
+                    <p>Isolation thermique et acoustique.</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-left">
+                <a href="faux_plafond.html" class="card text-center p-3 text-decoration-none">
+                    <i class="fas fa-th-large fa-3x text-danger"></i>
+                    <h4 class="mt-2">Faux Plafonds</h4>
+                    <p>Plafonds suspendus.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content">
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".carousel-item img");
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        images.forEach(image => {
+            image.addEventListener("click", function () {
+                modal.style.display = "flex";
+                modalImage.src = this.src;
+            });
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        window.closeModal = closeModal;
+    });
+    </script>
+
+    <!-- Avantages -->
+    <section class="advantages-section" data-aos="fade-up">
+        <div class="container">
+          <h2>  <strong>Pourquoi choisir les services de l’entreprise Colinon Alexis ?</strong></h2>
+                <p>Que vous soyez un particulier ou un professionnel, votre entreprise vous garantit un savoir-faire plus que rassurant :</p>
+                <p>Titulaire d’un CAP plâtrier et plaquiste, votre professionnel vous garantit un travail soigneux et appliqué. Sa rigueur et sa réactivité lui ont, entre autres, permis d’être élu « 2ème meilleur plaquiste dans le Grand Est 2020 ».</p>
+            <ul>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i> Des produits de qualité : cloisons sèches, plafonds suspendus, cloisons amovibles, planchers techniques, etc.</li>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i> Un interlocuteur réactif et unique.</li>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i> Des conseils techniques sur la fiabilité ou le choix des matériaux.</li>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i> Une écoute attentive de vos besoins.</li>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i> Des tarifs attractifs et compétitifs.</li>
+                <li data-aos="fade-right"><i class="fas fa-check-circle"></i>  Une étude détaillée de votre projet avec devis gratuit à la clé…</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+<div class="hero-section" data-aos="zoom-in">
+    <div class="content">
+        <h1>GALERIE</h1>
+        <a href="galerie.html" class="voir-photos-btn">Voir photos</a>
+    </div>
+</div>
+
+<!-- Devis -->
+<section class="cta-section py-5" data-aos="fade-up">
+    <div class="container text-center">
+        <h2 class="text-uppercase text-danger fw-bold">
+            Obtenez votre devis <span class="text-black">personnalisé gratuitement !</span>
+        </h2>
+        <p class="mt-3">
+            Vous souhaitez rénover votre habitation ou votre bureau ? Vous désirez améliorer l’isolation de votre intérieur ou créer un nouvel espace ?
+            Au plus près de vos exigences, notre entreprise se tient prête à vous délivrer
+            <strong>un devis sur-mesure et complet</strong>. Gratuit et rapide, ce service est disponible par téléphone ou les réseaux sociaux.
+            <a href="contacts.html" class="text-danger fw-bold">trouvez ci-joint.</a>.
+        </p>
+        <p>
+            Pour découvrir en images nos réalisations et prestations, vous pouvez également
+            nous suivre sur les réseaux sociaux :
+            <a href="https://www.facebook.com/people/Colinon-Alexis-Plaquiste/100063778862976/" target="_blank" class="text-danger fw-bold">Facebook</a>
+            ,
+            <a href="https://www.instagram.com/colinon_plaquiste/" target="_blank" class="text-danger fw-bold">Instagram</a>
+            et
+            <a href="https://www.tiktok.com/@colinon_platrerie" target="_blank" class="text-danger fw-bold">Tik Tok</a>
+        </p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start logo">
+                        <img src="Logo.png" alt="Logo Alexis Colinon">
+                        <p>– Plâtrier, Plaquiste –</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Coordonnées</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Villers-le-Sec, 51250</p>
+                        <p><i class="fas fa-phone"></i> 06 43 20 93 34</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:colinon.plaquiste@gmail.com">colinon.plaquiste@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Plan du site</h4>
+                        <p><a href="index.html">Accueil</a> | <a href="qui_somme_nous.html">Qui sommes-nous ?</a></p>
+                        <p><a href="service_platerie.html">Service plâtreries</a> | <a href="service_construction.html">Service Constructions sèches</a></p>
+                        <p><a href="isolation.html">Isolation</a> | <a href="contacts.html">Contacts</a> | <a href="galerie.html">Galerie</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/people/Colinon-Alexis-Plaquiste/100063778862976/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/colinon_plaquiste/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@colinon_platrerie" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="mention_legale.html">Mentions Légales</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

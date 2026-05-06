@@ -1,6 +1,4 @@
 -- Chargement des images, polices et helpers de sprites.
--- Ce fichier est le plus "technique" du projet.
--- Si tu debutes, retiens surtout ceci :
 -- 1. on charge les images
 -- 2. on coupe les spritesheets en morceaux
 -- 3. on prépare les tuyaux pour pouvoir les étirer proprement

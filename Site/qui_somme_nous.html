@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Plâterie et Construction Sèche Marne - Plaquiste Alexis Colinon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            color: #c8102e;
+        }
+
+        .text-container {
+            background-color: #c8102e;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .top-bar {
+            background-color: #c8102e;
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 0.9rem;
+            color: black;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link.active {
+            color: #c8102e;
+        }
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #c8102e;
+            margin: 2px auto 0;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-top {
+            padding-bottom: 20px;
+        }
+        .footer-bottom {
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        .footer-bottom a {
+            text-decoration: none;
+            color: #c8102e;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            color: #c8102e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            color: #d2232a;
+            font-size: 24px;
+        }
+        .intro {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .qui-suis-je {
+            display: flex;
+            margin: 40px 10px;
+            gap: 30px;
+        }
+        .qui-suis-je img {
+            max-width: 300px;
+            border: 2px solid #ccc;
+        }
+        .qui-suis-je div {
+            flex: 1;
+        }
+        .qui-suis-je h2 {
+            color: black;
+        }
+        .qui-suis-je blockquote {
+            font-size: 16px;
+            color: #555;
+            border-left: 4px solid #d2232a;
+            padding-left: 10px;
+        }
+        .logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .logo img {
+            max-width: 300px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   <!-- Barre supérieure avec coordonnées -->
+   <div class="top-bar text-center" data-aos="fade-down">
+    <span><i class="fas fa-map-marker-alt"></i> Villers-le-Sec, 51250</span>
+    <span class="mx-3"><i class="fas fa-phone"></i> Tél : 06 43 20 93 34</span>
+    <span><i class="fas fa-envelope"></i> <a href="mailto:colinon.plaquiste@gmail.com">colinon.plaquiste@gmail.com</a></span>
+    <span class="mx-3">Suivez-nous :
+        <a href="https://www.facebook.com/people/Colinon-Alexis-Plaquiste/100063778862976/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/colinon_plaquiste/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@colinon_platrerie" target="_blank"><i  class="fab fa-tiktok"></i></a>
+    </span>
+</div>
+
+<!-- Barre de navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="Logo.png" alt="Logo Alexis Colinon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="qui_somme_nous.html">QUI SOMMES-NOUS ?</a>
+                </li>
+                <!-- Dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="service_platerie.html">SERVICE PLÂTRERIES</a></li>
+                        <li><a class="dropdown-item" href="service_construction.html">SERVICE CONSTRUCTIONS SÈCHES</a></li>
+                        <li><a class="dropdown-item" href="isolation.html">ISOLATION</a></li>
+                        <li><a class="dropdown-item" href="faux_plafond.html">FAUX PLAFOND</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">GALERIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="header" data-aos="fade-up">
+            <h1>Depuis 2020, l’entreprise Colinon Alexis  est votre spécialiste de la plâtrerie, de la construction sèche  et de l’isolation dans la Marne. Pour l’aménagement de votre intérieur, profitez d’une offre complète et sur-mesure assurée par des professionnels qualifiés et certifiés ! Cloisons, plafonds, planchers : découvrez toutes nos solutions de qualité!</h1>
+        </div>
+
+        <div class="qui-suis-je" data-aos="fade-up">
+            <img src="image_3.jpg" alt="Portrait d'Alexis Colinon" data-aos="fade-right">
+            <div data-aos="fade-left">
+                <h2>QUI SUIS-JE ?</h2>
+                <blockquote>
+                    "Titulaire d’un CAP plâtrier et plaquiste, j’ai décidé de créer mon entreprise en 2020 afin d’apporter mon expérience et mon savoir-faire aux particuliers et professionnels souhaitant optimiser leur aménagement et leur isolation.
+                    Installé à Villers-Le-Sec, j’interviens dans le secteur de la Marne en garantissant proximité et efficacité sur chaque chantier. Mon objectif : livrer des réalisations de qualité quel que soit le lieu et la configuration du chantier. Et ceci, dans des délais optimisés."
+                    <br><br>
+                    <strong>Alexis Colinon</strong>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="logo" data-aos="zoom-in">
+            <img src="logo.png" alt="Logo Colinon Alexis">
+        </div>
+
+        <div class="container mt-4" data-aos="fade-up">
+            <div class="row g-3">
+                <div class="col-md-6" data-aos="fade-right">
+                    <video autoplay muted loop class="w-100">
+                        <source src="Desk_of_Mitsuki.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <video autoplay muted loop class="w-100">
+                        <source src="Desk_of_Mitsuki.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <video autoplay muted loop class="w-100">
+                        <source src="Desk_of_Mitsuki.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <video autoplay muted loop class="w-100">
+                        <source src="Desk_of_Mitsuki.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Logo -->
+                    <div class="col-md-4 text-center text-md-start logo">
+                        <img src="Logo.png" alt="Logo Alexis Colinon">
+                        <p>– Plâtrier, Plaquiste –</p>
+                    </div>
+                    <!-- Coordonnées -->
+                    <div class="col-md-4">
+                        <h4>Coordonnées</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Villers-le-Sec, 51250</p>
+                        <p><i class="fas fa-phone"></i> 06 43 20 93 34</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto: colinon.plaquiste@gmail.com">colinon.plaquiste@gmail.com</a></p>
+                    </div>
+                    <!-- Plan du site -->
+                    <div class="col-md-4">
+                        <h4>Plan du site</h4>
+                        <p><a href="index.html">Accueil</a> | <a href="qui_somme_nous.html">Qui sommes-nous ?</a></p>
+                        <p><a href="service-platerie.html">Service plâtreries</a> | <a href="service_construction.html">Service Construction sèches</a></p>
+                        <p><a href="isolation.html">Isolation</a> | <a href="questions.html">Questions</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/people/Colinon-Alexis-Plaquiste/100063778862976/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/colinon_plaquiste/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@colinon_platrerie" target="_blank"><i  class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="mention_legale.html">Mentions Légales</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

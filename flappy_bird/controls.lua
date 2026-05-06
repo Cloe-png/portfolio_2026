@@ -254,7 +254,7 @@ function updateGame(dt)
     updateClouds(dt)
     updateRainbowMusic()
 
-    -- Si on n'est pas dans une partie, on arrete ici.
+    -- Si on n'est pas dans une partie, on stop ici.
     if state ~= "playing" then
         return
     end

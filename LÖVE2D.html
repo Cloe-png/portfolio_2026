@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Veille technologique - LÖVE2D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
+</head>
+<body class="stage-page stage-page-flappy">
+  <div class="page-bg page-bg-cyan" aria-hidden="true"></div>
+  <main class="content-shell">
+    <header class="content-topbar reveal">
+      <a class="content-brand" href="chapters.html">Cloé Wlodarski-Zminka</a>
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="skills-nav"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="content-nav" id="skills-nav">
+        <a href="chapters.html">Home</a>
+        <a href="aboutme.html">Présentation</a>
+        <a href="projects.html">Stages</a>
+        <a class="is-active" href="skills.html">Veille techno</a>
+        <a href="projetsperso.html">Projet perso</a>
+        <a href="futur.html">Avenir</a>
+      </nav>
+    </header>
+
+    <section class="stage-showcase stage-showcase-deck reveal" data-stage-theme="cyan">
+      <div class="stage-selector stage-selector-clean">
+        <button class="stage-selector__arrow stage-selector__arrow-left" id="prevStage" type="button" aria-label="Sujet précédent">
+          &#8249;
+        </button>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy is-active" data-stage-theme="cyan">
+          <div class="skills-ppt-frame skills-ppt-frame-cover">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 01</p>
+            </div>
+            <div class="skills-ppt-cover">
+              <p class="skills-ppt-cover__eyebrow">BTS SIO</p>
+              <img src="assets/images/LÖVE2D.jpg" alt="LÖVE2D Logo">
+              <h3>LÖVE2D : Framework de développement de jeux vidéo en 2D basé sur Lua</h3>
+              <div class="skills-ppt-cover__meta">
+                <span id="stageCounter" aria-live="polite">Slide 1 / 6</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 02</p>
+            </div>
+            <div class="skills-ppt-layout skills-ppt-layout-agenda">
+              <div class="skills-ppt-block">
+                <p class="skills-ppt-kicker">Sommaire</p>
+                <h2>Plan de la présentation</h2>
+                <ol class="skills-ppt-agenda">
+                  <li>Présentation de LÖVE2D</li>
+                  <li>Avantages et simplicité d'utilisation</li>
+                  <li>Modules love.*</li>
+                  <li>Fonctions clés (love.update, love.draw)</li>
+                  <li>Performances et compatibilité</li>
+                  <li>Conclusion</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="violet">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 03</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <h2>Présentation de LÖVE2D</h2>
+                <div class="skills-ppt-copy">
+                  <p>LÖVE2D est un framework de développement de jeux vidéo en 2D basé sur le langage Lua. Il est conçu pour permettre de créer des jeux de manière simple, rapide et légère, sans avoir besoin d'un moteur de jeu complexe. Son objectif principal est de fournir uniquement les outils essentiels pour développer un jeu, tout en laissant une grande liberté au développeur sur la manière de structurer son projet.</p>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 04</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <h2>Avantages et simplicité d'utilisation</h2>
+                <div class="skills-ppt-copy">
+                  <p>L'un des grands avantages de LÖVE2D est sa simplicité d'utilisation. Il propose directement des fonctionnalités pour gérer l'affichage, les entrées utilisateur, le son et la logique du jeu. Cela permet de se concentrer sur le gameplay plutôt que sur des aspects techniques trop lourds. Le framework fonctionne autour d'un ensemble de modules appelés love.*, chacun ayant un rôle précis dans le fonctionnement du jeu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="cyan">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 05</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <h2>Modules love.*</h2>
+                <div class="skills-ppt-copy">
+                  <p>Par exemple, love.graphics gère tout ce qui est affichage, comme les images, le texte, les formes ou les couleurs. love.keyboard permet de gérer les actions du joueur au clavier, tandis que love.mouse s'occupe des interactions à la souris. Le son est géré par love.audio, et les images par love.image. La logique du jeu est mise à jour en continu grâce à love.update, tandis que love.draw s'occupe d'afficher les éléments à l'écran à chaque frame.</p>
+                </div>
+              </div>
+              <div class="skills-ppt-sidegrid">
+                <section class="skills-ppt-mini">
+                  <strong>Modules principaux</strong>
+                  <p>love.graphics, love.keyboard, love.mouse, love.audio, love.image, love.update, love.draw</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-slide stage-slide-clean stage-slide-flappy" data-stage-theme="orange">
+          <div class="skills-ppt-frame">
+            <div class="skills-ppt-toolbar">
+              <span></span><span></span><span></span>
+              <p>LÖVE2D | Slide 06</p>
+            </div>
+            <div class="skills-ppt-layout">
+              <div class="skills-ppt-block">
+                <h2>Performances, compatibilité et conclusion</h2>
+                <div class="skills-ppt-copy">
+                  <p>LÖVE2D est également apprécié pour sa légèreté et ses performances. Il fonctionne sur plusieurs systèmes d'exploitation comme Windows, Linux et macOS, ce qui le rend accessible et polyvalent. Il est particulièrement utilisé pour des jeux indépendants, des prototypes ou des projets d'apprentissage, car il permet de comprendre facilement les bases du développement de jeux vidéo.</p>
+                  <p>En résumé, LÖVE2D est un framework simple, puissant et pédagogique, idéal pour apprendre à créer des jeux en 2D tout en gardant un contrôle total sur le code et la structure du projet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <button class="stage-selector__arrow stage-selector__arrow-right" id="nextStage" type="button" aria-label="Sujet suivant">
+          &#8250;
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/pages.js?v=2"></script>
+</body>
+</html>
